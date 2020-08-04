@@ -1,0 +1,124 @@
+/********    colores clases   ************/
+:root {
+    --dark: #1E212A;
+    --dark-x: #2C2D30;
+    --dark-xx: #5A626B;
+    --light: #ffffff;
+    --primary: #0FA8EC;
+    --primary-x: #21C4E1;
+    --gray-x: #909194;
+    --Gray-Button: #EFEFEF;
+    --Bk_Generic: #F9F9F9; 
+ }
+ 
+ * 
+ {  vertical-align: baseline;
+     font-weight: inherit;
+     font-family: inherit;
+     font-style: inherit;
+     font-size: 100%;
+     border: 0 none;
+     outline: 0;
+     padding: 0;
+     margin: 0; 
+ }
+ 
+ ul {
+     padding: 0;
+     margin: 0;
+     list-style-type: none!important; 
+ }
+ a {
+     text-decoration: none!important;
+     text-decoration-style: none!important;
+ }
+ body {
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    color: var(--dark-x);
+    background-color: var(--Bk_Generic);
+   /*  font-size: 1rem;
+    font-weight: 300!important; */
+ }
+
+/**************** GENERAL *****************/
+
+.Hr { margin: 4px 0; border: 0.7px solid #dedede; }
+.Hr2 { border: 0.3px solid #dedede; }
+.Hr3 { border: 0.4px solid #d3d3d3; margin-top: 20px; margin-bottom: 5px; }
+.Hr4 { border: 0.4px solid #e8e8e8; margin-top: 10px; margin-bottom: 10px; }
+.Hr5 { border-bottom: 0.001px solid #bababa; margin-top: 12px; margin-bottom: 12px; }
+.Hr6 { border-bottom: 0.001px solid #bababa; margin: 4px 0; }
+
+.Br-xl { height: 10vh; }
+.Br-lg { height: 8vh;  }
+.Br-md { height: 6vh;  }
+.Br-sm { height: 4vh;  }
+.Br-xs { height: 2vh;  }
+.Br-xxs { height: 1.3vh;  }
+
+.FullWidth  { width : 100%; }
+.FullHeight { height: 100%; }
+.FullSize   { width : 100%; height: 100%; }
+
+.FullScreen { width: auto; height: 100vh; }
+
+.Bk-Cover { background-size: cover; }
+.Bk-Contain { background-position: center center; background-repeat: no-repeat; background-size: contain; }
+.Bk-Fixed   { background-position: center top; background-repeat: no-repeat; background-attachment: fixed; }
+
+/************* Clases Basicas de Margenes *************/
+
+.MarginLeft { margin-left: 10px; }
+.MarginRight { margin-right: 10px; }
+.MarginRight-Button { margin-right: 40px !important; }
+.MarginGeneral { margin: 5px 10px;}
+
+
+/************** Fuentes Tamaños **************/
+
+.FontsSize-xxs { font-size: 10px !important;}
+.FontsSize-xs { font-size: 11px !important;}
+.FontsSize-Min { font-size: 12px !important;}
+.FontsSize-Md { font-size: 13px !important;}
+.FontsSize-Re { font-size: 14px !important;}
+.FontSize-Med { font-size: 15px!important;}
+.FontsSize-Title { font-size: 16px!important;}
+.FontsSize-Standar { font-size: 18px!important;}
+.FontsSize-md-pa { font-size: 22px!important;}
+.FontsSize-lg { font-size: 30px!important;}
+.FontsSize-LG { font-size: 45px!important;}
+
+/**************** Letter Spacing ****************/
+
+.LetterSpacing {letter-spacing: normal;}
+.LetterSpacing {letter-spacing: 1;}
+.LineHeight-Initial {line-height: initial; }
+
+/**************** Estilos Fuentes ****************/
+.Dispaly-Grid { display: grid!important; }
+
+/**************** Estilos Fuentes ****************/
+
+.X-Light { font-weight: 200; }
+.Light {font-weight: 300; }
+.Regular {font-weight: 400;}
+.Medium { font-weight: 500;}
+.Semibold { font-weight: 600;}
+.Bold { font-weight:700;}
+.Extra-Bold { font-weight:800;}
+.Black { font-weight:900;}
+.LightItalic {font-style: italic;}
+
+
+/* -------------------- Codigo detalaldo del Proyecto ------------- */
+
+.ColorDark-x { color: var(--dark-x); }
+.ColorDark-x:hover { color: var(--primary); }
+.ColorDark-xx { color: var(--dark-xx); }
+
+.Box_Shadow { box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.09) !important;}
+
+.BK_Color_Light { background-color: var(--light)!important;}
+.BK_Color_Primary { background-color: var(--primary)!important;}
+
+.NavBar { min-height: 4rem; }
