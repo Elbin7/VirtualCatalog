@@ -121,4 +121,6 @@
 .BK_Color_Light { background-color: var(--light)!important;}
 .BK_Color_Primary { background-color: var(--primary)!important;}
 
-.NavBar { min-height: 4rem; }
+.NavBar { min-height: 4.2rem; }
+.BranchLogo { height: 55px; }
+.StirpeImg { height: 20px; } 
