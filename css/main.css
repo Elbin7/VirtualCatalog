@@ -95,7 +95,7 @@
 .LineHeight-Initial {line-height: initial; }
 
 /**************** Estilos Fuentes ****************/
-.Dispaly-Grid { display: grid!important; }
+.Display-Grid { display: grid!important; }
 
 /**************** Estilos Fuentes ****************/
 
@@ -112,11 +112,12 @@
 
 /* -------------------- Codigo detalaldo del Proyecto ------------- */
 
+
 .ColorDark-x { color: var(--dark-x); }
 .ColorDark-x:hover { color: var(--primary); }
 .ColorDark-xx { color: var(--dark-xx); }
 
-.Box_Shadow { box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.09) !important;}
+.Box_Shadow { box-shadow: 0 5px 6px rgba(0, 0, 0, 0.12) !important;}
 
 .BK_Color_Light { background-color: var(--light)!important;}
 .BK_Color_Primary { background-color: var(--primary)!important;}
@@ -124,3 +125,21 @@
 .NavBar { min-height: 4.1rem; }
 .BranchLogo { height: 40px; }
 .StirpeImg { height: 18px; } 
+
+.Badge-Bag {
+    color: #fff;
+    background-color: var(--primary);
+    font-size: 13px;
+    vertical-align: super;
+    border-radius: 50%;
+    padding: .25em .45em;
+}
+.fa-shopping-bag:before {
+    content: "\f290";
+    font-size: 18px;
+}
+
+.fa-filter:before {
+    content: "\f0b0";
+    font-size: 19px;
+}
