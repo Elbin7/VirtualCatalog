@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#079ed0">
+    <meta name="theme-color" content="#059adf">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#079ed0">
+    <meta name="msapplication-navbutton-color" content="#059adf">
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#079ed0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#059adf">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -20,6 +20,8 @@
 
     <!--  hoja de estilos -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/main.js" charset="utf-8" type="text/javascript"></script> <!-- carpeta javascript -->
 
     <!--  Conector de fuentes de google-->
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -33,35 +35,275 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light">
-        <div class="container d-inline-flex align-items-center">
-            <!-- identidad marca -->
-            <div class="Display-Grid LineHeight-Initial">
-                <a class="navbar-brand pb-0 FontsSize-Re Black" href="#">¡HOLA BAGUER!</a>
-                <small class="Semibold ColorDark-xx" href="#">Bienvenido, esto es para ti</small>
-            </div>           
-        <!--     <button class="navbar-toggler border-0 IconMenuToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars" aria-hidden="true"></i>
-            </button> -->
-            <!--  Lista de menu superior  -->
+     <!-- Header con scrollview dinamico -->
+    <header amp-fx="float-in-top" class="Header-Dinamic Box_Shadow">
+        <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light animated fadeInLeft">
+            <div class="container d-inline-flex align-items-center">
+                <!-- identidad marca -->
+                <div class="Display-Grid LineHeight-Initial">
+                    <a class="navbar-brand text-uppercase pb-0 FontsSize-Re Black L-S-1" href="#">¡HOLA BAGUER!</a>
+                    <small class="Semibold ColorDark-xx" href="#">Bienvenido, esto es para ti</small>
+                </div>           
+            <!--     <button class="navbar-toggler border-0 IconMenuToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button> -->
+                <!--  Lista de menu superior  -->
                 <ul class="list-inline ml-auto">
                     <li class="list-inline-item nav-item mr-4">
-                        <a class="ColorDark-x" href="#"><i class="fas fa-shopping-bag"></i> <span class="badge Badge-Bag">4</span></a>
+                        <a class="IconHeader" href="#"><i class="fas fa-shopping-bag"></i> <span class="badge Badge-Bag">4</span></a>
                     </li>
                     <li class="list-inline-item nav-item mr-3">
-                        <a class="ColorDark-x" href="#"><i class="fas fa-filter"></i></a>
+                        <a class="IconHeader" href="#"><i class="fas fa-filter"></i></a>
                     </li>
                 </ul>
-        </div><!--  cierre de container  -->
-    </nav>
+            </div><!--  cierre de container  -->
+        </nav>
+
+        <!-- div para carga dinamica de las marcas -->
+        <div class="BranchLogo d-flex justify-content-center BK_Color_Primary animated fadeInRight">
+            <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/Stirpe_Logo.png" type="img/png" alt="LogoStirpe" class="StirpeImg"></a>            
+        </div>
+
+        <!--  div para filtros responsive -->
+        <section class="d-flex flex-row justify-content-between"> 
+            <div class="mx-auto w-50 text-center FontsSize-Md L-S-3 Extra-Bold ColorDark-x Btn-Filters-sm active"><a class="Btn-a" href="">VER OUTFITS</a></div>
+            <div class="mx-auto w-50 text-center FontsSize-Md L-S-3 Extra-Bold ColorDark-x Btn-Filters-sm"><a class="Btn-a" href="">VER PRODUCTOS</a></div>
+        </section>
+    </header>
+    <!-- Final header -->
+
+    <!-- Limpiar Contenedores para header dinamico -->
+    <div class="Br-Header_Clear"></div>
+    <div class="Br-sm d-block d-sm-none" ></div>
+    <div class="Br-xs d-none d-md-block" ></div>
+    
+
+    <!-- Outfits List -->
+    <section class="Outfits-List animated fadeInDown">
+        <div class="container">
+            <div class="row d-flex">
+
+                <div class="Coles col-6 col-md-4">
+
+                    <!-- card dinamico Outifits -->
+                    <div class="card Card-Producto CursorPointer mb-2">
+                        <img src="img/model_1.jpg" class="card-img-top" alt="img-producto">
+                        <div class="card-body p-2">
+                            <div class="L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                            </div>
+                            <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><del>$36.990</del> - <span class="FontsSize-Title Extra-Bold ColorPrimary">$150.000 </span></h4>
+                            <P class="m-0 mb-1 Semibold FontsSize-Md ColorGray-x">Personaliza tu producto <i class="fas fa-chevron-down ml-1 ColorDark"></i></P>
+                        </div>
+                        <div class="card-footer Card-Footer ColorDark-x d-inline-flex align-items-center">
+                            <a class="btn Btn-Reset text-uppercase w-100 Black BK-Gray-Btn FontsSize-Min L-S-2 Box_Shadow " href=""><i class="fas fa-box-open mr-1"></i> Detallar Outfit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="Coles col-6 col-md-4">
+
+                    <!-- card dinamico Outifits -->
+                    <div class="card Card-Producto CursorPointer mb-2">
+                        <img src="img/model_4.jpg" class="card-img-top" alt="img-producto">
+                        <div class="card-body p-2">
+                            <div class="L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                            </div>
+                            <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><span class="FontsSize-Title Extra-Bold">$230.000</span></h4>
+                            <P class="m-0 mb-1 Semibold FontsSize-Md ColorGray-x">Personaliza tu producto <i class="fas fa-chevron-down ml-1 ColorDark"></i></P>
+                        </div>
+                        <div class="card-footer Card-Footer ColorDark-x d-inline-flex align-items-center">
+                            <a class="btn Btn-Reset text-uppercase w-100 Black BK-Gray-Btn FontsSize-Min L-S-2 Box_Shadow " href=""><i class="fas fa-box-open mr-1"></i> Detallar Outfit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="Coles col-6 col-md-4">
+
+                    <!-- card dinamico Outifits -->
+                    <div class="card Card-Producto CursorPointer mb-2">
+                        <img src="img/model_7.jpg" class="card-img-top" alt="img-producto">
+                        <div class="card-body p-2">
+                            <div class="L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                            </div>
+                            <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><del>$36.990</del> - <span class="FontsSize-Title Extra-Bold ColorPrimary">$150.000 </span></h4>
+                            <P class="m-0 mb-1 Semibold FontsSize-Md ColorGray-x">Personaliza tu producto <i class="fas fa-chevron-down ml-1 ColorDark"></i></P>
+                        </div>
+                        <div class="card-footer Card-Footer ColorDark-x d-inline-flex align-items-center">
+                            <a class="btn Btn-Reset text-uppercase w-100 Black BK-Gray-Btn FontsSize-Min L-S-2 Box_Shadow" href=""><i class="fas fa-box-open mr-1"></i> Detallar Outfit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="Coles col-6 col-md-4">
+
+                    <!-- card dinamico Outifits -->
+                    <div class="card Card-Producto CursorPointer mb-2">
+                        <img src="img/model_8.jpg" class="card-img-top" alt="img-producto">
+                        <div class="card-body p-2">
+                            <div class="L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                            </div>
+                            <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><span class="FontsSize-Title Extra-Bold">$230.000</span></h4>
+                            <P class="m-0 mb-1 Semibold FontsSize-Md ColorGray-x">Personaliza tu producto <i class="fas fa-chevron-down ml-1 ColorDark"></i></P>
+                        </div>
+                        <div class="card-footer Card-Footer ColorDark-x d-inline-flex align-items-center">
+                            <a class="btn Btn-Reset text-uppercase w-100 Black BK-Gray-Btn FontsSize-Min L-S-2 Box_Shadow" href=""><i class="fas fa-box-open mr-1"></i> Detallar Outfit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="Coles col-6 col-md-4">
+
+                    <!-- card dinamico Outifits -->
+                    <div class="card Card-Producto CursorPointer mb-2">
+                        <img src="img/model_9.jpg" class="card-img-top" alt="img-producto">
+                        <div class="card-body p-2">
+                            <div class="L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                            </div>
+                            <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><del>$36.990</del> - <span class="FontsSize-Title Extra-Bold ColorPrimary">$150.000 </span></h4>
+                            <P class="m-0 mb-1 Semibold FontsSize-Md ColorGray-x">Personaliza tu producto <i class="fas fa-chevron-down ml-1 ColorDark"></i></P>
+                        </div>
+                        <div class="card-footer Card-Footer ColorDark-x d-inline-flex align-items-center">
+                            <a class="btn Btn-Reset text-uppercase shadow w-100 Black BK-Gray-Btn FontsSize-Min L-S-2" href=""><i class="fas fa-box-open mr-1"></i> Detallar Outfit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="Coles col-6 col-md-4">
+
+                    <!-- card dinamico Outifits -->
+                    <div class="card Card-Producto CursorPointer mb-2">
+                        <img src="img/model_10.jpg" class="card-img-top" alt="img-producto">
+                        <div class="card-body p-2">
+                            <div class="L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                            </div>
+                            <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><span class="FontsSize-Title Extra-Bold">$230.000</span></h4>
+                            <P class="m-0 mb-1 Semibold FontsSize-Md ColorGray-x">Personaliza tu producto <i class="fas fa-chevron-down ml-1 ColorDark"></i></P>
+                        </div>
+                        <div class="card-footer Card-Footer ColorDark-x d-inline-flex align-items-center">
+                            <a class="btn Btn-Reset text-uppercase shadow w-100 Black BK-Gray-Btn FontsSize-Min L-S-2" href=""><i class="fas fa-box-open mr-1"></i> Detallar Outfit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="Coles col-6 col-md-4">
+
+                    <!-- card dinamico Outifits -->
+                    <div class="card Card-Producto CursorPointer mb-2">
+                        <img src="img/model_11.jpg" class="card-img-top" alt="img-producto">
+                        <div class="card-body p-2">
+                            <div class="L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                            </div>
+                            <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><del>$36.990</del> - <span class="FontsSize-Title Extra-Bold ColorPrimary">$150.000 </span></h4>
+                            <P class="m-0 mb-1 Semibold FontsSize-Md ColorGray-x">Personaliza tu producto <i class="fas fa-chevron-down ml-1 ColorDark"></i></P>
+                        </div>
+                        <div class="card-footer Card-Footer ColorDark-x d-inline-flex align-items-center">
+                            <a class="btn Btn-Reset text-uppercase shadow w-100 Black BK-Gray-Btn FontsSize-Min L-S-2" href=""><i class="fas fa-box-open mr-1"></i> Detallar Outfit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="Coles col-6 col-md-4">
+
+                    <!-- card dinamico Outifits -->
+                    <div class="card Card-Producto CursorPointer mb-2">
+                        <img src="img/model_12.jpg" class="card-img-top" alt="img-producto">
+                        <div class="card-body p-2">
+                            <div class="L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                            </div>
+                            <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><span class="FontsSize-Title Extra-Bold">$230.000</span></h4>
+                            <P class="m-0 mb-1 Semibold FontsSize-Md ColorGray-x">Personaliza tu producto <i class="fas fa-chevron-down ml-1 ColorDark"></i></P>
+                        </div>
+                        <div class="card-footer Card-Footer ColorDark-x d-inline-flex align-items-center">
+                            <a class="btn Btn-Reset text-uppercase shadow w-100 Black BK-Gray-Btn FontsSize-Min L-S-2" href=""><i class="fas fa-box-open mr-1"></i> Detallar Outfit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="Coles col-6 col-md-4">
+
+                    <!-- card dinamico Outifits -->
+                    <div class="card Card-Producto CursorPointer mb-2">
+                        <img src="img/model_13.jpg" class="card-img-top" alt="img-producto">
+                        <div class="card-body p-2">
+                            <div class="L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                            </div>
+                            <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><del>$36.990</del> - <span class="FontsSize-Title Extra-Bold ColorPrimary">$150.000 </span></h4>
+                            <P class="m-0 mb-1 Semibold FontsSize-Md ColorGray-x">Personaliza tu producto <i class="fas fa-chevron-down ml-1 ColorDark"></i></P>
+                        </div>
+                        <div class="card-footer Card-Footer ColorDark-x d-inline-flex align-items-center">
+                            <a class="btn Btn-Reset text-uppercase w-100 Black BK-Gray-Btn FontsSize-Min L-S-2 Box_Shadow" href=""><i class="fas fa-box-open mr-1"></i> Detallar Outfit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="Coles col-6 col-md-4">
+
+                    <!-- card dinamico Outifits -->
+                    <div class="card Card-Producto CursorPointer mb-2">
+                        <img src="img/model_15.jpg" class="card-img-top" alt="img-producto">
+                        <div class="card-body p-2">
+                            <div class="L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                            </div>
+                            <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><span class="FontsSize-Title Extra-Bold">$230.000</span></h4>
+                            <P class="m-0 mb-1 Semibold FontsSize-Md ColorGray-x">Personaliza tu producto <i class="fas fa-chevron-down ml-1 ColorDark"></i></P>
+                        </div>
+                        <div class="card-footer Card-Footer ColorDark-x d-inline-flex align-items-center">
+                            <a class="btn Btn-Reset text-uppercase w-100 Black BK-Gray-Btn FontsSize-Min L-S-2 Box_Shadow" href=""><i class="fas fa-box-open mr-1"></i> Detallar Outfit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+            </div> <!-- Final row -->
+        </div>
+    </section> 
+    <!-- final outfist -->
+
+    <div class="Br-xxs" ></div>
+
+    <section class="d-flex flex-column justify-content-between py-5 BK_Color_Light Box_Shadow">
+        <div class="mx-auto w-75 text-center FontsSize-Md L-S-3 Extra-Bold ColorDark-x">
+            <p>Has visto 6 de 20 Productos en tienda</p>
+        </div> 
+        <div class="mx-auto w-75 text-center FontsSize-Md L-S-3 Black ColorDark-x Btn-mas_Productos"><a class="Btn-a" href="">MÁS PRODUCTOS</a></div>
+    </section>
 
     <!-- div para carga dinamica de las marcas -->
-    <div class="BranchLogo d-flex justify-content-center BK_Color_Primary Box_Shadow">
-        <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/Stirpe_Logo.png" type="img/png" alt="LogoStirpe" class="StirpeImg"></a>            
-    </div>
-
-
+    <footer class="d-flex flex-row justify-content-between px-3 py-4 BK-Footer">
+        <div><a href="" target="blank" class="align-self-center Extra-Bold ColorDark-x FontsSize-Md text-uppercase L-S-2">2020 Baguer SAS</a></div>
+        <div><a href="" target="blank" class="align-self-center Semibold ColorDark-x FontsSize-Md">Términos y Condiciones</a></div>
+    </footer>
 
 
 
@@ -77,7 +319,14 @@
     <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
         integrity=" sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
         crossorigin=" anonymous "></script>
-        <script src="js/main.js" charset="utf-8" type="text/javascript"></script>
+
+        <!-- Codigo para librerias de fx amp -->
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+        
 </body>
 
 </html>

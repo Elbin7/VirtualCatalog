@@ -7,8 +7,10 @@
     --primary: #0FA8EC;
     --primary-x: #21C4E1;
     --gray-x: #909194;
-    --Gray-Button: #EFEFEF;
-    --Bk_Generic: #F9F9F9; 
+    --grary-line: #DEDEDE;
+    --Gray-Button: #ececea;
+    --Bk_Generic: #f5f5f5;
+    --BK-Footer: #E2E2E2; 
  }
  
  * 
@@ -49,6 +51,8 @@
 .Hr5 { border-bottom: 0.001px solid #bababa; margin-top: 12px; margin-bottom: 12px; }
 .Hr6 { border-bottom: 0.001px solid #bababa; margin: 4px 0; }
 
+
+.Br-Header_Clear { height: 17vh; }
 .Br-xl { height: 10vh; }
 .Br-lg { height: 8vh;  }
 .Br-md { height: 6vh;  }
@@ -84,18 +88,23 @@
 .FontSize-Med { font-size: 15px!important;}
 .FontsSize-Title { font-size: 16px!important;}
 .FontsSize-Standar { font-size: 18px!important;}
+.FontsSize-Medium { font-size: 19px!important;}
 .FontsSize-md-pa { font-size: 22px!important;}
 .FontsSize-lg { font-size: 30px!important;}
 .FontsSize-LG { font-size: 45px!important;}
 
 /**************** Letter Spacing ****************/
 
-.LetterSpacing {letter-spacing: normal;}
-.LetterSpacing {letter-spacing: 1;}
+.LetterSpacing_N {letter-spacing: normal;}
+.L-S-3 {letter-spacing: 1px;}
+.L-S-2 {letter-spacing: 0.5px;}
+.L-S-1 {letter-spacing: 0.25px;}
 .LineHeight-Initial {line-height: initial; }
+.L-H-1 {line-height: 1; }
 
-/**************** Estilos Fuentes ****************/
+/**************** Estilos grid ****************/
 .Display-Grid { display: grid!important; }
+.CursorPointer { cursor: pointer; }
 
 /**************** Estilos Fuentes ****************/
 
@@ -111,20 +120,56 @@
 
 
 /* -------------------- Codigo detalaldo del Proyecto ------------- */
+.Header-Dinamic {
+    position: fixed!important;
+    top: 0!important;
+    overflow: hidden!important;
+    width: 100%!important;
+    z-index: 3;
+}
 
+.Btn-mas_Productos { 
+    border: 2px solid var(--gray-x);
+    padding: 0.75rem 0;
+    background: var(--light);
+ }
 
-.ColorDark-x { color: var(--dark-x); }
-.ColorDark-x:hover { color: var(--primary); }
-.ColorDark-xx { color: var(--dark-xx); }
+.Btn-Filters-sm { 
+    border: 1px solid var(--grary-line);
+    padding: 0.75rem 0;
+    background: var(--light);
+ }
+ .Btn-Filters-sm.active       { border-bottom: 3px solid var(--dark-xx); }
 
-.Box_Shadow { box-shadow: 0 5px 6px rgba(0, 0, 0, 0.12) !important;}
+ .Btn-a                       { color: var(--dark-x); }
+ .Btn-a:hover, .Btn-a:focus   { color: var(--dark-xx); }
+ .Btn-Reset {
+    padding: 0.5rem 0.5rem;
+    border: 0;
+    border-radius: 0rem;
+ }
 
-.BK_Color_Light { background-color: var(--light)!important;}
-.BK_Color_Primary { background-color: var(--primary)!important;}
+.ColorDark     { color: var(--dark); }
+.ColorDark-x   { color: var(--dark-x); }
+.ColorDark-xx  { color: var(--dark-xx); }
+.ColorGray-x   { color: var(--gray-x); }
+.ColorPrimary  { color: var(--primary); }
 
-.NavBar { min-height: 4.1rem; }
+.IconHeader        { color: var(--dark-xx); }
+.IconHeader:hover  { color: var(--dark-x); }
+
+.Box_Shadow  { box-shadow: 0 5px 6px rgba(0, 0, 0, 0.12) !important;}
+
+.BK_Color_Light     { background-color: var(--light)!important;}
+.BK_Color_Primary   { background-color: var(--primary)!important;}
+.BK-Gray-Btn        { background: var(--Gray-Button); }
+.BK-Footer          { background: var(--BK-Footer); }
+
+.NavBar {
+    height: 4.5rem;  }
+
 .BranchLogo { height: 40px; }
-.StirpeImg { height: 18px; } 
+.StirpeImg { height: 17px; } 
 
 .Badge-Bag {
     color: #fff;
@@ -136,10 +181,31 @@
 }
 .fa-shopping-bag:before {
     content: "\f290";
-    font-size: 18px;
+    font-size: 19px;
 }
-
 .fa-filter:before {
     content: "\f0b0";
     font-size: 19px;
+}
+
+.Card-Producto {
+    border: none;
+    border-radius: 0rem;
+    box-shadow: 0 0 4px #00000015;
+}
+.Card-Footer {
+    padding: 0rem;
+    background: none;
+    border: none;
+    border-radius: 0rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.Outfits-List .Coles {
+    padding-left: 5px;
+    padding-right:5px;
+    }
 }
