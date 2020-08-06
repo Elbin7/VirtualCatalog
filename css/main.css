@@ -38,6 +38,11 @@
     font-family: 'Mulish', Arial, Helvetica, sans-serif;
     color: var(--dark-x);
     background-color: var(--Bk_Generic);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
    /*  font-size: 1rem;
     font-weight: 300!important; */
  }
@@ -103,8 +108,9 @@
 .L-H-1 {line-height: 1; }
 
 /**************** Estilos grid ****************/
-.Display-Grid { display: grid!important; }
+.Display-Grid  { display: grid!important; }
 .CursorPointer { cursor: pointer; }
+.HeighImgCard  { height: 288px; width: 100%; flex-shrink: 1;}
 
 /**************** Estilos Fuentes ****************/
 
@@ -120,6 +126,7 @@
 
 
 /* -------------------- Codigo detalaldo del Proyecto ------------- */
+
 .Header-Dinamic {
     position: fixed!important;
     top: 0!important;
@@ -148,6 +155,9 @@
     border: 0;
     border-radius: 0rem;
  }
+
+.Border-Left     { border-left: 2px solid var(--dark-x)!important; }
+.Border-Bottom   { border-bottom: 2px solid; border-image: linear-gradient(45deg, var(--primary), var(--grary-line)); border-image-slice: 1;}
 
 .ColorDark     { color: var(--dark); }
 .ColorDark-x   { color: var(--dark-x); }
@@ -179,14 +189,60 @@
     border-radius: 50%;
     padding: .25em .45em;
 }
+
+
+
+/* ********  iconos  ****** */
+
 .fa-shopping-bag:before {
     content: "\f290";
-    font-size: 19px;
 }
 .fa-filter:before {
     content: "\f0b0";
     font-size: 19px;
 }
+.fa-whatsapp:before {
+    content: "\f232";
+    font-size: 19px;
+}
+
+.Pop {
+    display: flex;
+    flex-direction: column;
+    z-index: 300;
+}
+.Pop-Bottom-r { 
+    position: fixed;
+    right: 12px;
+    bottom: 63px;
+    align-items: flex-end;
+}
+.Button-Whatsapp {
+    height: 40px;
+    width: 50px;
+    position: relative;
+
+    animation-name: WhatsappAnimado;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+@keyframes WhatsappAnimado {
+    0%     { transform: scale(1);}
+    55%     { transform: scale(1);}
+    65%     { transform: scale(0.9);}
+    77%     { transform: scale(1.1);}
+    87%     { transform: scale(0.9);}
+    100%   { transform: scale(1); } 
+}
+
+/* ************ */
+
+
 
 .Card-Producto {
     border: none;
@@ -209,3 +265,18 @@
     padding-right:5px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+
+    section .LoadMoreAssets {
+        width: 30% !important;
+        justify-content: center;
+        }
+
+    section .LoadMoreBorder  {
+        width: 20% !important;
+        justify-content: center;
+        }
+
+    }
+    
