@@ -255,8 +255,8 @@
 }
 
 .Pointer-Select {
-    height: 20px;
-    width: 30px;
+    height:40px;
+    width: 40px;
     position: relative;
 
     animation-name: PointerAnimado;
