@@ -76,6 +76,8 @@
 .Bk-Contain { background-position: center center; background-repeat: no-repeat; background-size: contain; }
 .Bk-Fixed   { background-position: center top; background-repeat: no-repeat; background-attachment: fixed; }
 
+.PositionRelative { position: relative !important; }
+
 /************* Clases Basicas de Margenes *************/
 
 .MarginLeft { margin-left: 10px; }
@@ -96,6 +98,8 @@
 .FontsSize-Standar { font-size: 18px!important;}
 .FontsSize-Medium { font-size: 19px!important;}
 .FontsSize-md-pa { font-size: 22px!important;}
+.FontsSize-23 { font-size: 23px!important;}
+.FontsSize-24 { font-size: 24px!important;}
 .FontsSize-lg { font-size: 30px!important;}
 .FontsSize-LG { font-size: 45px!important;}
 
@@ -219,6 +223,7 @@
     bottom: 63px;
     align-items: flex-end;
 }
+
 .Button-Whatsapp {
     height: 40px;
     width: 50px;
@@ -242,8 +247,37 @@
     100%   { transform: scale(1); } 
 }
 
-/* ************ */
+.Pop-Pointer-Select { 
+    position: absolute;
+    right: 12px;
+    bottom: 63px;
+    align-items: flex-end;
+}
 
+.Pointer-Select {
+    height: 20px;
+    width: 30px;
+    position: relative;
+
+    animation-name: WhatsappAnimado;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out; 
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+@keyframes WhatsappAnimado {
+    0%     { transform: scale(1);}
+    55%     { transform: scale(1);}
+    65%     { transform: scale(0.9);}
+    77%     { transform: scale(1.1);}
+    87%     { transform: scale(0.9);}
+    100%   { transform: scale(1); } 
+}
+
+/* ************ */
 
 
 .Card-Producto {
@@ -258,7 +292,8 @@
     border-radius: 0rem;
 }
 
-.Card-Img { flex-shrink: 0; width: 100%; border-top-left-radius: 0rem !important; border-top-right-radius: 0rem !important; }
+/* .Card-Img { flex-shrink: 0; width: 100%; border-top-left-radius: 0rem !important; border-top-right-radius: 0rem !important; } */
+
 
 
 /* Trabajo con medias Querys */
@@ -282,6 +317,11 @@
         width: 20% !important;
         justify-content: center;
         }
-
     }
+
+@media only screen and (min-width: 1400px) {
+    .Br-xl-None {
+        display: none!important;
+    }
+}
     

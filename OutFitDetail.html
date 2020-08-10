@@ -40,7 +40,7 @@
 
 <body>
     <!-- color BK de la seccion -->
-    <div class="BK-Color-x">
+    <div class="BK_Color_Light">
          <!-- Header con scrollview dinamico -->
         <header amp-fx="float-in-top" class="Header-Dinamic Box_Shadow">
             <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light animated fadeInLeft">
@@ -81,43 +81,47 @@
         
             <!-- Limpiar Contenedores para header dinamico -->
             <div class="Br-Header_Clear"></div>
-            <div class="Br-sm d-block d-sm-none" ></div>
-            <div class="Br-xs d-none d-md-block" ></div>
+            <div class="Br-sm d-block Br-xl-None" ></div>
+            <div class="Br-md d-none d-sm-block"></div>
             
         
             <!-- Outfits Detail -->
             <section class="Outfits-List animated fadeInDown">
                 <div class="container">
                     <div class="row d-flex">
-        
                         <!-- OutFit Detail Img -->
-                        <div class="Coles col- col-sm-6">
+                        <div class="Coles col- col-md-6">
         
-                            <div class="img-fluid w-100"">
+                            <div class="w-100 PositionRelative">
+                                <div class="Pop Pop-Pointer-Select">
+                                    <div class="Pointer-Select">
+                                        <a href="ProductDetail.html"><img src="img/POINTER.svg" alt="LogoWhatsapp"></a>
+                                    </div >
+                                </div>
                                <img src="img/outFit_7.jpg" alt="Detalle Outfit" class="img-fluid">
                             </div>
         
                         </div>
-        
-                        <div class="Coles col- col-sm-6">
+
+                        <div class="Coles col- col-md-6">
                             <!-- card dinamico Outifits -->
                             <div class="mb-3 p-3">
-                                <div class="L-H-1">
-                                    <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <div class="d-flex flex-row justify-content-between align-items-center L-H-1">
+                                    <h3 class="m-0 FontsSize-23 Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
                                     <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
                                 </div>
-                                <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><del>$36.990</del> - <span class="FontsSize-Title Extra-Bold ColorPrimary">$150.000 </span></h4>
-                                <ul class="list-inline Semibold ColorDark-x L-S-1 FontsSize-Re">
-                                    <li class="list-inline-item"><span class="Extra-Bold">5</span> Tallas</li>
-                                    <li class="list-inline-item ml-3"><span class="Extra-Bold">4</span> Colores</li>
-                                </ul>
-                                <div class="ColorDark-x d-inline-flex align-items-center w-100">
-                                    <a class="btn Btn-Reset text-uppercase w-100 Black BK-Gray-Btn FontsSize-Md L-S-2 Box_Shadow" href=""><i class="fas fa-shopping-bag mr-1"></i> Añadir a Bolsa</a>
+                                <div class="Br-xxs d-none d-md-block" ></div>
+                                <h4 class="m-0 mb-3 FontsSize-Standar Extra-Bold ColorPrimary">$150.000 COP</h4>
+                                <div class="Br-xxs d-none d-md-block" ></div>
+                                <div class="d-flex d-row mb-3">
+                                    <a class="w-100 text-center p-0 py-2 FontsSize-Re L-S-3 Black ColorDark-x Btn-mas_Productos Btn-a" href="">¿Cómo Personalizar tu OUTFIT?</a>
+                                </div>
+                                <div class="d-flex d-row">
+                                    <a class="btn Btn-Reset text-uppercase w-100 Black BK-Gray-Btn FontsSize-Md L-S-2 shadow-sm" href="ProductDetail.html"><i class="fab fa-whatsapp align-bottom mr-1"></i> ¿Buscas Algo Diferente?</a>
                                 </div>
                             </div>
-                            
+      
                         </div>
-        
                         
                     </div> <!-- Final row -->
                 </div>
@@ -128,13 +132,6 @@
             <div class="Br-sm d-none d-md-block" ></div>
     </div> 
     <!-- color BK de la seccion -->
-    
-        <section class="d-flex flex-column justify-content-between py-5 BK_Color_Light Box_Shadow">
-            <div class="mx-auto pb-1 w-60 text-center LoadMoreBorder FontsSize-Md L-S-1 Bold ColorDark-x">
-                <p class="Border-Bottom pb-1">Has visto 6 de 20 Productos en tienda</p>
-            </div> 
-            <a class="mx-auto w-75 text-center LoadMoreAssets FontsSize-Re L-S-3 Black ColorDark-x Btn-mas_Productos Btn-a" href="">MÁS PRODUCTOS</a>
-        </section>
     
         <!-- div para carga dinamica de las marcas -->
         <footer class="px-3 py-4 BK-Footer">
