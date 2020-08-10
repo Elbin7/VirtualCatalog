@@ -253,10 +253,22 @@
     top: 87px;
     align-items: flex-end;
 }
+.Pop-Pointer-Select_2 { 
+    position: absolute;
+    left: 83px;
+    top: 300px;
+    align-items: flex-end;
+}
+.Pop-Pointer-Select_3 { 
+    position: absolute;
+    right: 25px;
+    bottom: 40px;
+    align-items: flex-end;
+}
 
 .Pointer-Select {
-    height:40px;
-    width: 40px;
+    height:45px;
+    width: 45px;
     position: relative;
 
     animation-name: PointerAnimado;
@@ -276,6 +288,29 @@
     87%     { transform: scale(0.95);}
     100%   { transform: scale(1); } 
 }
+.Hand_Animation {
+    height:45px;
+    width: 45px;
+    position: absolute;
+    opacity: 0;
+
+    animation-name: HandANimation;
+    animation-duration: 5s;
+    animation-timing-function: ease; 
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: inherit;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
+@keyframes HandANimation {
+    0%     { transform: translate(0px,90px) rotate(0deg);; opacity: 0; }
+    40%     { transform: translate(200px,90px) rotate(-50deg); opacity: 1; }
+    70%     { transform: translate(200px,90px); opacity: 1; }
+    100%     { transform: translate(0px,90px); opacity: 0;}
+   
+}
+
 
 /* ************ */
 
