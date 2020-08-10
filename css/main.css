@@ -4,13 +4,14 @@
     --dark-x: #2C2D30;
     --dark-xx: #5A626B;
     --light: #ffffff;
+    --Light-x: #d3abab;
     --primary: #0FA8EC;
     --primary-x: #21C4E1;
     --gray-x: #909194;
     --grary-line: #DEDEDE;
     --Gray-Button: #ececea;
     --Bk_Generic: #f5f5f5;
-    --BK-Footer: #E2E2E2; 
+    --BK-Footer: #E2E2E2;
  }
  
  * 
@@ -110,7 +111,6 @@
 /**************** Estilos grid ****************/
 .Display-Grid  { display: grid!important; }
 .CursorPointer { cursor: pointer; }
-.HeighImgCard  { height: 288px; width: 100%; flex-shrink: 1;}
 
 /**************** Estilos Fuentes ****************/
 
@@ -158,6 +158,7 @@
 
 .Border-Left     { border-left: 2px solid var(--dark-x)!important; }
 .Border-Bottom   { border-bottom: 2px solid; border-image: linear-gradient(45deg, var(--primary), var(--grary-line)); border-image-slice: 1;}
+.Border-R-0        { border-radius: 0 !important;}
 
 .ColorDark     { color: var(--dark); }
 .ColorDark-x   { color: var(--dark-x); }
@@ -174,6 +175,7 @@
 .BK_Color_Primary   { background-color: var(--primary)!important;}
 .BK-Gray-Btn        { background: var(--Gray-Button); }
 .BK-Footer          { background: var(--BK-Footer); }
+.BK-Color-x         { background-color: var(--Light-x)!important;}
 
 .NavBar {
     height: 4.5rem;  }
@@ -246,7 +248,7 @@
 
 .Card-Producto {
     border: none;
-    border-radius: 0rem;
+    border-radius: 0rem!important;
     box-shadow: 0 0 4px #00000015;
 }
 .Card-Footer {
@@ -256,8 +258,11 @@
     border-radius: 0rem;
 }
 
+.Card-Img { flex-shrink: 0; width: 100%; border-top-left-radius: 0rem !important; border-top-right-radius: 0rem !important; }
 
-/* Extra small devices (phones, 600px and down) */
+
+/* Trabajo con medias Querys */
+
 @media only screen and (max-width: 600px) {
 
 .Outfits-List .Coles {

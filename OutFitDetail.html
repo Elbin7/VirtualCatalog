@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <title>Virtual Catalog OutFits Detail</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#059adf">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#059adf">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#059adf">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--  hoja de estilos -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/main.js" charset="utf-8" type="text/javascript"></script> <!-- carpeta javascript -->
+
+    <!--  Conector de fuentes de google-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Conector de iconos a utilizar -->
+    <script src="https://kit.fontawesome.com/9645d248d7.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- icono para el navegador-->
+    <link rel="shortcut icon" href="img/book-open-solid.svg" type="img/svg">
+         <!-- Codigo para librerias de fx amp -->
+         <script async src="https://cdn.ampproject.org/v0.js"></script>
+         <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+         <!-- Header con scrollview dinamico -->
+        <header amp-fx="float-in-top" class="Header-Dinamic Box_Shadow">
+            <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light animated fadeInLeft">
+                <div class="container d-inline-flex align-items-center">
+                    <!-- identidad marca -->
+                    <div class="Display-Grid LineHeight-Initial">
+                        <a class="navbar-brand text-uppercase pb-0 FontsSize-Re Black L-S-1" href="#">¡HOLA BAGUER!</a>
+                        <small class="Semibold ColorDark-xx" href="#">Bienvenido, esto es para ti</small>
+                    </div>           
+                <!--     <button class="navbar-toggler border-0 IconMenuToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button> -->
+                    <!--  Lista de menu superior  -->
+                    <ul class="list-inline ml-auto">
+                        <li class="list-inline-item nav-item mr-4">
+                            <a class="IconHeader" href="#"><i class="fas fa-shopping-bag FontsSize-Medium"></i> <span class="badge Badge-Bag">4</span></a>
+                        </li>
+                        <li class="list-inline-item nav-item mr-3">
+                            <a class="IconHeader" href="#"><i class="fas fa-filter"></i></a>
+                        </li>
+                    </ul>
+                </div><!--  cierre de container  -->
+            </nav>
+    
+            <!-- div para carga dinamica de las marcas -->
+            <div class="BranchLogo d-flex justify-content-center BK_Color_Primary animated fadeInRight">
+                <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/Stirpe_Logo.png" type="img/png" alt="LogoStirpe" class="StirpeImg"></a>            
+            </div>
+    
+            <!--  div para filtros responsive -->
+            <section class="d-flex flex-row justify-content-between"> 
+                <div class="mx-auto w-50 text-center FontsSize-Md L-S-3 Extra-Bold ColorDark-x Btn-Filters-sm"><a class="Btn-a" href="index.html">VER OUTFITS</a></div>
+                <div class="mx-auto w-50 text-center FontsSize-Md L-S-3 Extra-Bold ColorDark-x Btn-Filters-sm"><a class="Btn-a" href="Products.html">VER PRODUCTOS</a></div>
+            </section>
+        </header>
+        <!-- Final header -->
+    <div class="BK-Color-x">
+        
+            <!-- Limpiar Contenedores para header dinamico -->
+            <div class="Br-Header_Clear"></div>
+            <div class="Br-sm d-block d-sm-none" ></div>
+            <div class="Br-xs d-none d-md-block" ></div>
+            
+        
+            <!-- Outfits Detail -->
+            <section class="Outfits-List animated fadeInDown">
+                <div class="container">
+                    <div class="row d-flex">
+        
+                        <!-- OutFit Detail Img -->
+                        <div class="Coles col- col-sm-6">
+        
+                            <div class="img-fluid w-100"">
+                               <img src="img/outFit_7.jpg" alt="Detalle Outfit" class="img-fluid">
+                            </div>
+        
+                        </div>
+        
+                        <div class="Coles col- col-sm-6">
+                            <!-- card dinamico Outifits -->
+                            <div class="mb-3 p-3">
+                                <div class="L-H-1">
+                                    <h3 class="m-0 FontsSize-Medium Semibold ColorDark-xx">Combo <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                    <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
+                                </div>
+                                <h4 class="m-0 mt-2 mb-2 FontsSize-Md"><del>$36.990</del> - <span class="FontsSize-Title Extra-Bold ColorPrimary">$150.000 </span></h4>
+                                <ul class="list-inline Semibold ColorDark-x L-S-1 FontsSize-Re">
+                                    <li class="list-inline-item"><span class="Extra-Bold">5</span> Tallas</li>
+                                    <li class="list-inline-item ml-3"><span class="Extra-Bold">4</span> Colores</li>
+                                </ul>
+                                <div class="ColorDark-x d-inline-flex align-items-center w-100">
+                                    <a class="btn Btn-Reset text-uppercase w-100 Black BK-Gray-Btn FontsSize-Md L-S-2 Box_Shadow" href=""><i class="fas fa-shopping-bag mr-1"></i> Añadir a Bolsa</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+        
+                        
+                    </div> <!-- Final row -->
+                </div>
+            </section> 
+            <!-- final outfist Detail -->
+        
+            <div class="Br-xxs" ></div>
+            <div class="Br-sm d-none d-md-block" ></div>
+    </div>
+    
+        <section class="d-flex flex-column justify-content-between py-5 BK_Color_Light Box_Shadow">
+            <div class="mx-auto pb-1 w-60 text-center LoadMoreBorder FontsSize-Md L-S-1 Bold ColorDark-x">
+                <p class="Border-Bottom pb-1">Has visto 6 de 20 Productos en tienda</p>
+            </div> 
+            <a class="mx-auto w-75 text-center LoadMoreAssets FontsSize-Re L-S-3 Black ColorDark-x Btn-mas_Productos Btn-a" href="">MÁS PRODUCTOS</a>
+        </section>
+    
+        <!-- div para carga dinamica de las marcas -->
+        <footer class="px-3 py-4 BK-Footer">
+            <div class="container d-flex flex-row justify-content-between align-items-center">
+                <div class=""><a href="" target="blank" class="align-self-center Extra-Bold ColorDark-x Btn-a FontsSize-Md text-uppercase L-S-1">&#169; 2020 Baguer</a></div>
+                <div class=""><a href="https://stirpe.co/politica-de-privacidad/" target="blank" class="align-self-center pl-4 float-left Semibold ColorDark-x Btn-a FontsSize-Md Border-Left">Términos y Condiciones</a></div>
+            </div>
+        </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity=" sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin=" anonymous "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity=" sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin=" anonymous "></script>
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+        integrity=" sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+        crossorigin=" anonymous "></script>
+
+        <!-- Elementos emergentes -->
+        <div class="Pop Pop-Bottom-r d-block d-sm-none">
+            <div class="Button-Whatsapp">
+                <a href="https://api.whatsapp.com/"><img src="img/Asset_1.svg" alt="LogoWhatsapp"></a>
+            </div >
+        </div>
+        
+</body>
+
+</html>
