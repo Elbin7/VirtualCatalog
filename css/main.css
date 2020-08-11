@@ -66,10 +66,11 @@
 .Br-xs { height: 2vh;  }
 .Br-xxs { height: 1.3vh;  }
 
-.FullWidth  { width : 100%; }
-.FullHeight { height: 100%; }
-.FullSize   { width : 100%; height: 100%; }
-.W-48   { width:  48%;}
+.FullWidth         { width : 100%; }
+.FullHeight        { height: 100%; }
+.FullSize          { width : 100%; height: 100%; }
+.HeightBodyModal   { height: calc(100vh - 50px); }
+.W-48              { width:  48%;}
 
 .FullScreen { width: auto; height: 100vh; }
 
@@ -78,6 +79,9 @@
 .Bk-Fixed   { background-position: center top; background-repeat: no-repeat; background-attachment: fixed; }
 
 .PositionRelative { position: relative !important; }
+
+.OverflowScroll   { overflow: scroll;}
+.Overflow-Hidden   { overflow: hidden!important;}
 
 /************* Clases Basicas de Margenes *************/
 
@@ -112,6 +116,10 @@
 .L-S-1 {letter-spacing: 0.25px;}
 .LineHeight-Initial {line-height: initial; }
 .L-H-1 {line-height: 1; }
+.L-H-2 {line-height: 1.2; }
+.L-H-3 {line-height: 1.3; }
+.L-H-4 {line-height: 1.4; }
+
 
 /**************** Estilos grid ****************/
 .Display-Grid  { display: grid!important; }
@@ -130,7 +138,7 @@
 .LightItalic {font-style: italic;}
 
 
-/* -------------------- Codigo detalaldo del Proyecto ------------- */
+/* -------------------- Codigo detallado del Proyecto ------------- */
 
 .Header-Dinamic {
     position: fixed!important;
@@ -160,6 +168,8 @@
     border: 0;
     border-radius: 0rem;
  }
+ .Btn-P { color: var(--primary);}
+ .Btn-P:hover, .Btn-P:focus   { color: var(--primary-x); }
 
 .Border-Left     { border-left: 2px solid var(--dark-x)!important; }
 .Border-Bottom   { border-bottom: 2px solid; border-image: linear-gradient(45deg, var(--primary), var(--grary-line)); border-image-slice: 1;}
@@ -320,7 +330,7 @@
 .fadeInDownModal {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
-    animation-duration: 700ms;
+    animation-duration: 800ms;
     animation-timing-function: ease; 
     animation-delay: 0s;
     animation-iteration-count: 1;
@@ -345,6 +355,16 @@
     }
 }
 
+.ArrowBack {
+    height:30px;
+    width: 30px;
+}
+.ArrowBack-Content {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    align-items: flex-end;
+}
 
 
 /* ************ */

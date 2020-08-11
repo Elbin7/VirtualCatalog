@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="212" height="212" viewBox="0 0 212 212">
+  <g id="arrow_volver" data-name="arrow volver" transform="translate(-6.491 -144.491)" opacity="0.95">
+    <circle id="Elipse_9" data-name="Elipse 9" cx="106" cy="106" r="106" transform="translate(6.491 144.491)" opacity="0.17"/>
+    <path id="arrow-left-solid" d="M83.155,169.282l-7.172,7.172a7.722,7.722,0,0,1-10.952,0l-62.8-62.771a7.721,7.721,0,0,1,0-10.952l62.8-62.8a7.721,7.721,0,0,1,10.952,0L83.155,47.1a7.762,7.762,0,0,1-.129,11.081L44.1,95.268h92.848a7.735,7.735,0,0,1,7.753,7.754V113.36a7.735,7.735,0,0,1-7.753,7.754H44.1L83.025,158.2A7.706,7.706,0,0,1,83.155,169.282Z" transform="translate(40.345 144.785)" fill="#fff" opacity="0.95"/>
+  </g>
+</svg>
