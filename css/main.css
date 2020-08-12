@@ -180,17 +180,20 @@
 .ColorDark-xx  { color: var(--dark-xx); }
 .ColorGray-x   { color: var(--gray-x); }
 .ColorPrimary  { color: var(--primary); }
+.Color-Light   { color: var(--light);}
 
 .IconHeader        { color: var(--dark-xx); }
 .IconHeader:hover  { color: var(--dark-x); }
 
 .Box_Shadow  { box-shadow: 0 5px 6px rgba(0, 0, 0, 0.12) !important;}
 
-.BK_Color_Light     { background-color: var(--light)!important;}
-.BK_Color_Primary   { background-color: var(--primary)!important;}
+.BK_Color_Light     { background-color: var(--light)!important; }
+.BK_Color_Primary   { background-color: var(--primary)!important; }
 .BK-Gray-Btn        { background: var(--Gray-Button); }
 .BK-Footer          { background: var(--BK-Footer); }
-.BK-Color-x         { background-color: var(--Light-x)!important;}
+.BK-Color-x         { background-color: var(--Light-x)!important; }
+.BK-Color-Dark      { background-color: var(--dark-x); }
+
 
 .NavBar {
     height: 4.5rem;  }
@@ -383,7 +386,6 @@
 }
 
 /* .Card-Img { flex-shrink: 0; width: 100%; border-top-left-radius: 0rem !important; border-top-right-radius: 0rem !important; } */
-
 
 
 /* Trabajo con medias Querys */
