@@ -93,14 +93,15 @@
                         <div class="Coles col- col-md-6">
         
                             <div class="w-100 PositionRelative">
+                                <!-- mano animada -->
+                                <div class="Pop Hand_Animation">
+                                    <a href="ProductDetail.html"><img src="img/Hand.svg" alt="LogoWhatsapp"></a>
+                                </div>
+
                                 <div class="Pop Pop-Pointer-Select">
                                     <div class="Pointer-Select">
                                         <a href="ProductDetail.html"><img src="img/POINTER.svg" alt="LogoWhatsapp"></a>
                                     </div >
-                                </div>
-                                <!-- mano animada -->
-                                <div class="Pop Hand_Animation">
-                                    <a href="ProductDetail.html"><img src="img/Hand.svg" alt="LogoWhatsapp"></a>
                                 </div>
                                 <!-- solo para ejemplo -->
                                 <div class="Pop Pop-Pointer-Select_2">
@@ -130,7 +131,7 @@
                                 <h4 class="m-0 mb-3 FontsSize-Standar Extra-Bold ColorPrimary">$150.000 COP</h4>
                                 <div class="Br-xxs d-none d-md-block" ></div>
                                 <div class="d-flex d-row mb-3">
-                                    <a class="w-100 text-center p-0 py-2 FontsSize-Re L-S-3 Black ColorDark-x Btn-mas_Productos Btn-a" href="">¿Cómo Personalizar tu OUTFIT?</a>
+                                    <a class="w-100 text-center p-0 py-2 FontsSize-Re L-S-3 Black ColorDark-x Btn-mas_Productos Btn-a" data-toggle="modal" data-target="#Help-Outfit" href="">¿Cómo Personalizar tu OUTFIT?</a>
                                 </div>
                                 <div class="d-flex d-row">
                                     <a class="btn Btn-Reset text-uppercase w-100 Black BK-Gray-Btn FontsSize-Md L-S-2 shadow-sm" href="ProductDetail.html"><i class="fab fa-whatsapp align-bottom mr-1"></i> ¿Buscas Algo Diferente?</a>
@@ -175,6 +176,32 @@
                 <a href="https://api.whatsapp.com/"><img src="img/Asset_1.svg" alt="LogoWhatsapp"></a>
             </div >
         </div>
+
+        <!-- Modal para ayuda de Outfit -->
+        <div class="modal fade" id="Help-Outfit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+
+                <div class="modal-content">
+
+                    <div class="modal-header d-flex d-row align-items-center justify-content-between">
+                        <h5 class="text-uppercase modal-title FontsSize-Title Black L-S-2" id="exampleModalLabel">¿Como Personalizar tu OutFit?</h5>
+                        <a class="Black ColorDark-x" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i>
+                        </a>
+                    </div>
+
+                    <div class="modal-body pt-2">
+                        <p class="mb-1 Semibold ColorDark-xx FontsSize-Md L-H-4">Puedes seleccionar máximo - <span class="text-uppercase Black ColorDark"> 2 TALLAS</span></p>
+                        
+                    </div>
+                    <div class="modal-footer d-flex d-row justify-content-center text-center">
+                        <a class="btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Btn-a-Light shadow-sm" data-dismiss="modal" aria-label="Close">Entendido</a>
+                    </div>
+
+                </div><!-- Final Modal Content --> 
+
+            </div>
+        </div>
+         <!-- Final Modal ayuda para outfits  -->
         
 </body>
 
