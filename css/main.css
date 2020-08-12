@@ -8,7 +8,7 @@
     --primary: #0FA8EC;
     --primary-x: #21C4E1;
     --gray-x: #909194;
-    --grary-line: #DEDEDE;
+    --gray-line: #DEDEDE;
     --Gray-Button: #ececea;
     --Bk_Generic: #f5f5f5;
     --BK-Footer: #E2E2E2;
@@ -173,6 +173,7 @@
 
 .Border-Left     { border-left: 2px solid var(--dark-x)!important; }
 .Border-Bottom   { border-bottom: 2px solid; border-image: linear-gradient(45deg, var(--primary), var(--grary-line)); border-image-slice: 1;}
+.Border-B-Gray   { border-bottom: 1px solid; color: var(--gray-line);}
 .Border-R-0        { border-radius: 0 !important;}
 
 .ColorDark     { color: var(--dark); }
@@ -386,6 +387,37 @@
 }
 
 /* .Card-Img { flex-shrink: 0; width: 100%; border-top-left-radius: 0rem !important; border-top-right-radius: 0rem !important; } */
+
+/* Configuracion de Check de tallas */
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #138cad;
+    background-color: var(--primary);
+}
+
+.custom-control-label::before {
+    position: absolute;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: #adb5bd solid 1px;
+}
+
+.custom-control-label::after {
+    position: absolute;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background: no-repeat 50%/50% 50%;
+}
 
 
 /* Trabajo con medias Querys */

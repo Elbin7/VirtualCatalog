@@ -222,16 +222,32 @@
             <div class="modal-dialog modal-dialog-centered">
 
                 <div class="modal-content">
-                    <div class="modal-header d-flex d-row align-items-center">
+                    <div class="modal-header d-flex d-row align-items-center justify-content-between">
                         <h5 class="modal-title FontsSize-Title Black L-S-2" id="exampleModalLabel">SELECCIONAR TALLAS</h5>
-                        <button type="button" class="close Black ColorDark-x" data-dismiss="modal" aria-label="Close">
-                            <span cla aria-hidden="true">&times;</span>
-                        </button>
+                        <a class="Black ColorDark-x" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i>
+                        </a>
                     </div>
-                    <div class="modal-body">
-                        ...
+                    <div class="modal-body pt-2">
+                        <p class="Semibold ColorDark-xx FontsSize-Md L-H-4">Puedes seleccionar máximo - <span class="text-uppercase Black ColorDark"> 2 TALLAS</span></p>
+                          <!-- Lista de Tallas -->
+                        <div class="container d-flex justify-content-between py-2 mt-1 Border-B-Gray mr-auto">
+                            <div class="container d-flex justify-content-start align-items-center ml-auto w-25 p-0 custom-control custom-checkbox justify-content-start">
+                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_1">
+                                <label for="customControlAutosizing_1" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title" for="customControlAutosizing"> XS</label>
+                            </div>
+                        </div>
+                        <div class="container d-flex justify-contentbjustify-content-between  py-2 mt-1 Border-B-Gray mr-auto">
+                            <div class="container d-flex justify-content-start align-items-center ml-auto w-25 p-0 custom-control custom-checkbox text-left">
+                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_2">
+                                <label for="customControlAutosizing_2" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title" for="customControlAutosizing"> S</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
+
+                  
+
+
+                    <div class="modal-footer d-flex d-row">
                         <a class="btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Color-Light shadow-sm" href="ProductDetail.html">Guardar</a>
                     </div>
                 </div> <!-- Final Modal Content -->
