@@ -33,9 +33,9 @@
     <!-- icono para el navegador-->
     <link rel="shortcut icon" href="img/book-open-solid.svg" type="img/svg">
          <!-- Codigo para librerias de fx amp -->
-         <script async src="https://cdn.ampproject.org/v0.js"></script>
-         <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
-         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -107,13 +107,13 @@
                                 </div>
 
                                 <div class="carousel-item active">
-                                    <img src="img/model_16.jpg" class="d-block w-100 h-30" alt="Imagenes-Carrusel">
+                                    <img src="img/model_16.jpg" loading="lazy" class="d-block w-100 h-30" alt="Imagenes-Carrusel">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/model_17.jpg" class="d-block w-100 h-30" alt="Imagenes-Carrusel">
+                                    <img src="img/model_17.jpg" loading="lazy" class="d-block w-100 h-30" alt="Imagenes-Carrusel">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/model_18.jpg" class="d-block w-100 h-30" alt="Imagenes-Carrusel">
+                                    <img src="img/model_18.jpg" loading="lazy" class="d-block w-100 h-30" alt="Imagenes-Carrusel">
                                 </div>
                             </div>
 
@@ -215,45 +215,127 @@
                     <img src="https://stirpe.co/img/banners/2019/10/07/banner_cupo_desktop.jpg" alt="Detalles del Cupo" class="img-fluid d-none d-md-block">
                 </div>
             </div> 
-        </div>
+        </div>                         
 
-        <!-- Modal Tallas  -->
+
+        <!-- Modal Seleccion de  Tallas  -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
 
                 <div class="modal-content">
+
                     <div class="modal-header d-flex d-row align-items-center justify-content-between">
                         <h5 class="modal-title FontsSize-Title Black L-S-2" id="exampleModalLabel">SELECCIONAR TALLAS</h5>
                         <a class="Black ColorDark-x" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i>
                         </a>
                     </div>
+
                     <div class="modal-body pt-2">
-                        <p class="Semibold ColorDark-xx FontsSize-Md L-H-4">Puedes seleccionar máximo - <span class="text-uppercase Black ColorDark"> 2 TALLAS</span></p>
+                        <p class="mb-1 Semibold ColorDark-xx FontsSize-Md L-H-4">Puedes seleccionar máximo - <span class="text-uppercase Black ColorDark"> 2 TALLAS</span></p>
+
+                        <div class="Br-xxs"></div>
+
                           <!-- Lista de Tallas -->
-                        <div class="container d-flex justify-content-between py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="container d-flex justify-content-start align-items-center ml-auto w-25 p-0 custom-control custom-checkbox justify-content-start">
+                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
+                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
                                 <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_1">
-                                <label for="customControlAutosizing_1" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title" for="customControlAutosizing"> XS</label>
+                                <label for="customControlAutosizing_1" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;XS</label>
                             </div>
                         </div>
-                        <div class="container d-flex justify-contentbjustify-content-between  py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="container d-flex justify-content-start align-items-center ml-auto w-25 p-0 custom-control custom-checkbox text-left">
+                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
+                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
                                 <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_2">
-                                <label for="customControlAutosizing_2" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title" for="customControlAutosizing"> S</label>
+                                <label for="customControlAutosizing_2" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;S</label>
+                            </div>
+                        </div>
+                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
+                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
+                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_3">
+                                <label for="customControlAutosizing_3" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;M</label>
+                            </div>
+                        </div>
+                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
+                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
+                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_4">
+                                <label for="customControlAutosizing_4" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;L</label>
+                            </div>
+                        </div>
+                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
+                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
+                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_5">
+                                <label for="customControlAutosizing_5" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;XL</label>
+                            </div>
+                        </div>
+                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 mr-auto">
+                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
+                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_6">
+                                <label for="customControlAutosizing_6" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;2XL</label>
                             </div>
                         </div>
                     </div>
 
-                  
-
-
-                    <div class="modal-footer d-flex d-row">
+                    <div class="modal-footer d-flex d-row justify-content-center text-center">
                         <a class="btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Color-Light shadow-sm" href="ProductDetail.html">Guardar</a>
+                        <a href=""data-toggle="modal" data-target="#Modal-Guia_Tallas" class="mb-2 mt-3 Semibold ColorDark-xx FontsSize-Md L-H-4">Referencia para guía de tallas - <span class="Extra-Bold ColorPrimary"> Ver Más</span></a>
                     </div>
                 </div> <!-- Final Modal Content -->
 
             </div>
         </div>
+         <!-- Final Modal de Tallas  -->
+
+         <!-- Modal para ayuda de Outfit -->
+        <div class="modal fade" id="Help-Outfit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+
+                <div class="modal-content">
+
+                    <div class="modal-header d-flex d-row align-items-center justify-content-between">
+                        <h5 class="text-uppercase modal-title FontsSize-Title Black L-S-2" id="exampleModalLabel">¿Como Personalizar tu OutFit?</h5>
+                        <a class="Black ColorDark-x" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i>
+                        </a>
+                    </div>
+
+                    <div class="modal-body pt-2">
+                        <p class="mb-1 Semibold ColorDark-xx FontsSize-Md L-H-4">Puedes seleccionar máximo - <span class="text-uppercase Black ColorDark"> 2 TALLAS</span></p>
+
+                        <div class="Br-xxs"></div>
+
+                          <!-- Lista de Tallas -->
+                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
+                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
+                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_1">
+                                <label for="customControlAutosizing_1" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;XS</label>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer d-flex d-row justify-content-center text-center">
+                            <a class="btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Color-Light shadow-sm" href="ProductDetail.html">Guardar</a>
+                            <a href=""data-toggle="modal" data-target="#Modal-Guia_Tallas" class="mb-2 mt-3 Semibold ColorDark-xx FontsSize-Md L-H-4">Referencia para guía de tallas - <span class="Extra-Bold ColorPrimary"> Ver Más</span></a>
+                        </div>
+                    </div>
+
+                </div><!-- Final Modal Content --> 
+
+            </div>
+        </div>
+         <!-- Final Modal de Tallas  -->
+
+            <!-- Modal para Guia de Tallas  -->
+        <div class="modal fadeInDownModal BK-Gray-Btn" id="Modal-Guia_Tallas">
+            <div class="modal-header d-flex justify-content-center BK-Color-x">
+                <h5 class="modal-title Extra-Bold FontsSize-Title LetterSpacing_N">Guía para Tallas</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex BK-Gray-Btn">
+                <div class="container-fluid d-flex justify-content-center text-center align-self-center">
+                    <img src="https://stirpe.co/img/guiatallas/prendas_mujer_responsive.jpg" alt="Detalles del Cupo" class="img-fluid d-block d-md-none">
+                </div>
+            </div> 
+        </div>
+         
         
 </body>
 
