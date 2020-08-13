@@ -39,7 +39,6 @@
 </head>
 
 <body>
-   <div class="BK_Color_Light">
          <!-- Header con scrollview dinamico -->
         <header amp-fx="float-in-top" class="Header-Dinamic Box_Shadow">
             <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light animated fadeInLeft">
@@ -80,20 +79,61 @@
     
        <!-- Limpiar Contenedores para header dinamico -->
        <div class="Br-Header_Clear"></div>
-       <div class="Br-sm d-block Br-xl-None" ></div>
-       <div class="Br-md d-none d-sm-block"></div>
+       <div class="Br-sm d-block"></div>
+       <div class="Br-md d-none d-sm-block Br-xl-None"></div>
     
-        <!-- Outfits Detail -->
-        <section class="Outfits-List animated fadeInDown">
-            <div class="container">
-                
+        <!-- Title Mi Bolsa -->
+        <section class=" animated fadeInDown">
+            <div class="container py-3 BK_Color_Light Box_Shadow rounded">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex d-row align-items-center justify-content-between">
+                            <h2 class="modal-title FontsSize-Medium Black L-S-3" id="exampleModalLabel">Mi Bolsa</h2>
+                            <small class="Semibold ColorDark-xx" href="#">Lista de Productos</small>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section> 
-        <!-- final outfist Detail -->
+        </section>
+        <!-- final Title MI Bolsa -->
+        <div class="Br-xs d-block"></div>
+          <!-- Content Card Producto -->
+        <section class=" animated fadeInDown">
+            <div class="container p-0">
+                <div class="Grid-Content">
+
+                    <div class="p-3 rounded BK_Color_Light Card-Product-Bag Box_Shadow">
+                        <div class="Card-Product-Bag-CheckOut">
+
+                            <div>
+                                <img src="img/outFit_7.jpg" alt="Detalle Outfit" class="img-fluid" loading="lazy">
+                            </div>
+
+                            <div>
+                                <div class="d-flex flex-row justify-content-between align-items-center L-H-1">
+                                    <h3 class="m-0 FontsSize-Standar Extra-Bold LetterSpacing_N ColorDark-x">Blusas Unser</h3>
+                                    <small class="Bold ColorDark-xx">SKU: <span class="ColorGray-x Regular">822299</span></small>
+                                </div>
+                                <h4 class="m-0 mb-3 mt-2 FontsSize-Standar Extra-Bold ColorPrimary">$150.000 COP</h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="p-3 rounded BK_Color_Light Card-Cost Box_Shadow">
+                        <div class="d-flex d-row align-items-center justify-content-between">
+                            <h2 class="modal-title FontsSize-Medium Black L-S-3" id="exampleModalLabel">Mi Bolsa</h2>
+                            <small class="Semibold ColorDark-xx" href="#">Lista de Productos</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- final Card Producto en Bolsa -->
     
         <div class="Br-xxs" ></div>
         <div class="Br-sm d-none d-md-block"></div>
-   </div>
 
     <!-- div para carga dinamica de las marcas -->
     <footer class="px-3 py-4 BK-Footer">
@@ -124,206 +164,6 @@
             </div >
         </div>
 
-        <!-- Modal para tabla de cupos  -->
-        <div class="modal fadeInDownModal BK-Gray-Btn" id="modal-detalle-cupo">
-            <div class="modal-header d-flex justify-content-center BK-Color-x">
-                <h5 class="modal-title Extra-Bold FontsSize-Title LetterSpacing_N">Guía de Cupos</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body d-flex BK-Gray-Btn">
-                <div class="container-fluid d-flex justify-content-center text-center align-self-center">
-                    <img src="https://stirpe.co/img/banners/2019/10/07/popup_cupo_responsive.jpg" alt="Detalles del Cupo" class="img-fluid d-block d-md-none">
-                    <img src="https://stirpe.co/img/banners/2019/10/07/banner_cupo_desktop.jpg" alt="Detalles del Cupo" class="img-fluid d-none d-md-block">
-                </div>
-            </div> 
-        </div>                         
-
-
-        <!-- Modal Seleccion de  Tallas  -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-
-                <div class="modal-content">
-
-                    <div class="modal-header d-flex d-row align-items-center justify-content-between">
-                        <h5 class="modal-title FontsSize-Title Black L-S-2" id="exampleModalLabel">SELECCIONAR TALLAS</h5>
-                        <a class="Black ColorDark-x CursorPointer" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i>
-                        </a>
-                    </div>
-
-                    <div class="modal-body pt-2">
-                        <p class="mb-1 Semibold ColorDark-xx FontsSize-Md L-H-4">Puedes seleccionar máximo - <span class="text-uppercase Black ColorDark"> 2 TALLAS</span></p>
-
-                        <div class="Br-xxs"></div>
-
-                          <!-- Lista de Tallas -->
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_1">
-                                <label for="customControlAutosizing_1" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;XS</label>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_2">
-                                <label for="customControlAutosizing_2" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;S</label>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_3">
-                                <label for="customControlAutosizing_3" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;M</label>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_4">
-                                <label for="customControlAutosizing_4" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;L</label>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_5">
-                                <label for="customControlAutosizing_5" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;XL</label>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_6">
-                                <label for="customControlAutosizing_6" class="custom-control-label text-uppercase ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;2XL</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-footer d-flex d-row justify-content-center text-center">
-                        <a class="btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Btn-a-Light shadow-sm" href="">Guardar</a>
-                        <a href="" data-toggle="modal" data-target="#Modal-Guia_Tallas" class="mb-2 mt-3 Semibold ColorDark-xx FontsSize-Md L-H-4">Referencia para guía de tallas - <span class="Extra-Bold ColorPrimary"> Ver Más</span></a>
-                    </div>
-                </div> <!-- Final Modal Content -->
-
-            </div>
-        </div>
-         <!-- Final Modal de Tallas  -->
-
-         <!-- Modal Selección de Colores  -->
-        <div class="modal fade" id="ModalSelectorColors" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-
-                <div class="modal-content">
-
-                    <div class="modal-header d-flex d-row align-items-center justify-content-between">
-                        <h5 class="modal-title FontsSize-Title Black L-S-2" id="exampleModalLabel">SELECCIONAR COLORES</h5>
-                        <a class="Black ColorDark-x CursorPointer" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i>
-                        </a>
-                    </div>
-
-                    <div class="modal-body pt-2">
-                        <p class="mb-1 Semibold ColorDark-xx FontsSize-Md L-H-4">Selecciona el color que desees</p>
-
-                        <div class="Br-xxs"></div>
-
-                          <!-- Lista de Tallas -->
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_12">
-                                <label for="customControlAutosizing_12" class="custom-control-label ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;Arena</label>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_13">
-                                <label for="customControlAutosizing_13" class="custom-control-label ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;Rojo</label>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_14">
-                                <label for="customControlAutosizing_14" class="custom-control-label ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;Verdes</label>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_15">
-                                <label for="customControlAutosizing_15" class="custom-control-label ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;Amarillos</label>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 Border-B-Gray mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_16">
-                                <label for="customControlAutosizing_16" class="custom-control-label ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;Azules</label>
-                            </div>
-                        </div>
-                        <div class="container d-flex justify-content-between align-items-center ml-auto py-2 mt-1 mr-auto">
-                            <div class="Margin-Check-Content p-0 custom-control custom-checkbox justify-content-start">
-                                <input type="checkbox" class="custom-control-input" value="" id="customControlAutosizing_17">
-                                <label for="customControlAutosizing_17" class="custom-control-label ColorDark LetterSpacing_N Extra-Bold FontsSize-Title"> &nbsp;Gris</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-footer d-flex d-row justify-content-center text-center">
-                        <a class="my-3 btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Btn-a-Light shadow-sm" href="">Guardar</a>
-                    </div>
-                </div> <!-- Final Modal Content -->
-
-            </div>
-        </div>
-         <!-- Final Modal de Colores  -->
-
-            <!-- Modal para Guia de Tallas  -->
-        <div class="modal fadeInDownModal BK-Gray-Btn" id="Modal-Guia_Tallas">
-            <div class="modal-header d-flex justify-content-center BK-Color-x">
-                <h5 class="modal-title Extra-Bold FontsSize-Title LetterSpacing_N">Guía para Tallas</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body d-flex BK-Gray-Btn">
-                <div class="container-fluid d-flex justify-content-center text-center align-self-center">
-                    <img src="https://stirpe.co/img/guiatallas/prendas_mujer_responsive.jpg" alt="Detalles del Cupo" class="img-fluid">
-                </div>
-            </div> 
-        </div>
-
-        <!-- Modal Para cuando el cliente Añade producto a la bolsa validado correctamente  -->
-        <div class="modal fade" id="Outfit-CheckOut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-
-                <div class="modal-content">
-
-                    <div class="modal-header d-flex d-row align-items-center justify-content-between">
-                        <h5 class="text-uppercase modal-title FontSize-Med Black L-S-1" id="exampleModalLabel">Añadido a la Bolsa</h5>
-                        <a class="Black ColorDark-x CursorPointer" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i>
-                        </a>
-                    </div>
-
-                    <div class="modal-body">
-                        <div class="d-flex d-table-row">
-                            <p class="w-50 my-3 Semibold ColorDark-xx FontsSize-Re L-H-4">Para detallar cada prenda de tu OutFit presiona los<span class="text-uppercase Black ColorDark"> Puntos Azules. >></span></p>
-                            <div class="w-50 PositionRelative">
-                                <div class="Pop Pop-Pointer-Select_Help">
-                                    <div class="Pointer-Select">
-                                        <a href="ProductDetail.html"><img src="img/POINTER.svg" alt="LogoWhatsapp"></a>
-                                    </div >
-                                </div>
-                                <div class="Pop Hand_Animation_Help">
-                                    <a href="ProductDetail.html"><img src="img/Hand.svg" alt="LogoWhatsapp"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="modal-footer d-flex d-row justify-content-center text-center">
-                        <a class="btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Btn-a-Light shadow-sm" data-dismiss="modal" aria-label="Close"><span class="fas fa-shopping-bag mr-2 FontsSize-Min align-middle"></span> <span class="align-middle">Ver mi Bolsa</span></a>
-                    </div>
-
-                </div><!-- Final Modal Content --> 
-
-            </div>
-        </div>
-        <!-- Modal Para cuando el cliente Añade producto a la bolsa validado correctamente Final  -->
          
         
 </body>
