@@ -157,7 +157,7 @@
  }
 
 .Btn-Filters-sm { 
-    border: 1px solid var(--grary-line);
+    border: 1px solid var(--gray-line);
     padding: 0.75rem 0;
     background: var(--light);
  }
@@ -176,7 +176,7 @@
  .Btn-P:hover, .Btn-P:focus   { color: var(--primary-x); }
 
 .Border-Left     { border-left: 2px solid var(--dark-x)!important; }
-.Border-Bottom   { border-bottom: 2px solid; border-image: linear-gradient(45deg, var(--primary), var(--grary-line)); border-image-slice: 1;}
+.Border-Bottom   { border-bottom: 2px solid; border-image: linear-gradient(45deg, var(--primary), var(--gray-line)); border-image-slice: 1;}
 .Border-B-Gray   { border-bottom: 1px solid; color: var(--gray-line);}
 .Border-R-0        { border-radius: 0 !important;}
 
@@ -322,7 +322,7 @@
     animation-duration: 3s;
     animation-timing-function: ease; 
     animation-delay: 0s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 3;
     animation-direction: inherit;
     animation-fill-mode: both;
     animation-play-state: running;
