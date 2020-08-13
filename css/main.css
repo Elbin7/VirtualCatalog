@@ -198,6 +198,7 @@
 .BK-Footer          { background: var(--BK-Footer); }
 .BK-Color-x         { background-color: var(--Light-x)!important; }
 .BK-Color-Dark      { background-color: var(--dark-x); }
+.BK-Generic         { background: var(--Bk_Generic);}
 
 
 .NavBar {
@@ -286,6 +287,7 @@
     align-items: flex-end;
 }
 
+
 /* Contiene la Animación y Tamaño de los Pointer Selector */
 .Pointer-Select {
     height:45px;
@@ -316,7 +318,7 @@
     width: 45px;
     position: absolute;
     opacity: 0;
-    z-index: 500;
+    z-index: 600;
 
     animation-name: HandANimation;
     animation-duration: 3s;
@@ -335,6 +337,45 @@
     75%     { left: calc(52% - 22.5px); top: calc(27% - 45px);opacity: 1; } 
     100%    { left: calc(0% - 0px); top: calc(27% - 45px);opacity: 0; }
 }
+
+
+
+.Pop-Pointer-Select_Help {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(70% - 45px);
+    align-items: flex-end;  
+}
+
+/* Contiene la Animación de la Manita de Ayuda en la Modal */
+.Hand_Animation_Help {
+    height:45px;
+    width: 45px;
+    position: absolute;
+    opacity: 0;
+    z-index: 500;
+
+    animation-name: HandAnimationhelp;
+    animation-duration: 3s;
+    animation-timing-function: ease; 
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: inherit;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    transform-box: unset;
+}
+@keyframes HandAnimationhelp {
+
+    0%      { left: calc(0% - 0px); top: calc(50% - 18px); opacity: 0; }
+    40%     { left: calc(56% - 22.5px); top: calc(50% - 18px); transform: rotate(-50deg) ;opacity: 1; }
+    75%     { left: calc(56% - 22.5px); top: calc(50% - 18px);opacity: 1; } 
+    100%    { left: calc(0% - 0px); top: calc(50% - 18px);opacity: 0; }
+}
+
+
+
+
 
 /* Animación Modal */ 
 .fadeInDownModal {
