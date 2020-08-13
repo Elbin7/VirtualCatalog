@@ -81,6 +81,8 @@
 
 .PositionRelative { position: relative !important; }
 
+.Display-None { display: none; }
+
 .OverflowScroll   { overflow: scroll;}
 .Overflow-Hidden   { overflow: hidden!important;}
 
@@ -110,7 +112,7 @@
 .FontsSize-lg { font-size: 30px!important;}
 .FontsSize-LG { font-size: 45px!important;}
 
-/**************** Letter Spacing ****************/
+/***************  Letter Spacing  ***************/
 
 .LetterSpacing_N {letter-spacing: normal;}
 .L-S-3 {letter-spacing: 1px;}
