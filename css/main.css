@@ -81,7 +81,7 @@
 
 .PositionRelative { position: relative !important; }
 
-.Display-None { display: none; }
+.Display-None { display: none!important;}
 
 .OverflowScroll   { overflow: scroll;}
 .Overflow-Hidden   { overflow: hidden!important;}
@@ -196,6 +196,7 @@
 
 .BK_Color_Light     { background-color: var(--light)!important; }
 .BK_Color_Primary   { background-color: var(--primary)!important; }
+.BK_Color_Derek     { background-color: var(--primary-x)!important; }
 .BK-Gray-Btn        { background: var(--Gray-Button); }
 .BK-Footer          { background: var(--BK-Footer); }
 .BK-Color-x         { background-color: var(--Light-x)!important; }
