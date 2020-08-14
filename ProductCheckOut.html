@@ -27,6 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Conector de iconos a utilizar -->
+    <link href="/css/all.css" rel="stylesheet"> <!--load all styles -->
     <script src="https://kit.fontawesome.com/9645d248d7.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
@@ -39,273 +40,285 @@
 </head>
 
 <body>
-         <!-- Header con scrollview dinamico -->
-        <header amp-fx="float-in-top" class="Header-Dinamic Box_Shadow">
-            <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light animated fadeInLeft">
-                <div class="container d-inline-flex align-items-center">
-                    <!-- identidad marca -->
-                    <div class="Display-Grid LineHeight-Initial">
-                        <a class="navbar-brand text-uppercase pb-0 FontsSize-Re Black L-S-1" href="#">¡HOLA BAGUER!</a>
-                        <small class="Semibold ColorDark-xx" href="#">Bienvenido, esto es para ti</small>
-                    </div>           
-                <!--     <button class="navbar-toggler border-0 IconMenuToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars" aria-hidden="true"></i>
-                    </button> -->
-                    <!--  Lista de menu superior  -->
-                    <ul class="list-inline ml-auto">
-                        <li class="list-inline-item nav-item mr-4">
-                            <a class="IconHeader" href="#"><i class="fas fa-shopping-bag FontsSize-Medium"></i> <span class="badge Badge-Bag">4</span></a>
-                        </li>
-                        <li class="list-inline-item nav-item mr-3">
-                            <a class="IconHeader" href="#"><i class="fas fa-filter"></i></a>
-                        </li>
-                    </ul>
-                </div><!--  cierre de container  -->
-            </nav>
+        <!-- Header con scrollview dinamico -->
+    <header amp-fx="float-in-top" class="Header-Dinamic Box_Shadow">
+        <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light animated fadeInLeft">
+            <div class="container d-inline-flex align-items-center">
+                <!-- identidad marca -->
+                <div class="Display-Grid LineHeight-Initial">
+                    <a class="navbar-brand text-uppercase pb-0 FontsSize-Re Black L-S-1" href="#">¡HOLA BAGUER!</a>
+                    <small class="Semibold ColorDark-xx" href="#">Bienvenido, esto es para ti</small>
+                </div>           
+            <!--     <button class="navbar-toggler border-0 IconMenuToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button> -->
+                <!--  Lista de menu superior  -->
+                <ul class="list-inline ml-auto">
+                    <li class="list-inline-item nav-item mr-4">
+                        <a class="IconHeader" href="#"><i class="fas fa-shopping-bag FontsSize-Medium"></i> <span class="badge Badge-Bag">4</span></a>
+                    </li>
+                    <li class="list-inline-item nav-item mr-3">
+                        <a class="IconHeader" href="#"><i class="fas fa-filter"></i></a>
+                    </li>
+                </ul>
+            </div><!--  cierre de container  -->
+        </nav>
+
+        <!-- div para carga dinamica de las marcas -->
+        <div class="BranchLogo d-flex justify-content-center BK_Color_Primary animated fadeInRight">
+            <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/Stirpe_Logo.png" type="img/png" alt="LogoStirpe" class="StirpeImg"></a>            
+        </div>
+
+        <!--  div para filtros responsive -->
+        <section class="d-flex flex-row justify-content-between"> 
+            <div class="mx-auto w-50 text-center FontsSize-Md L-S-3 Extra-Bold ColorDark-x Btn-Filters-sm"><a class="Btn-a" href="index.html">VER OUTFITS</a></div>
+            <div class="mx-auto w-50 text-center FontsSize-Md L-S-3 Extra-Bold ColorDark-x Btn-Filters-sm"><a class="Btn-a" href="Products.html">VER PRODUCTOS</a></div>
+        </section>
+    </header>
+    <!-- Final header -->
     
-            <!-- div para carga dinamica de las marcas -->
-            <div class="BranchLogo d-flex justify-content-center BK_Color_Primary animated fadeInRight">
-                <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/Stirpe_Logo.png" type="img/png" alt="LogoStirpe" class="StirpeImg"></a>            
-            </div>
+    <!-- Limpiar Contenedores para header dinamico -->
+    <div class="Br-Header_Clear"></div>
+    <div class="Br-sm d-block"></div>
+    <div class="Br-md d-none d-sm-block d-md-none Br-xl-None"></div>
     
-            <!--  div para filtros responsive -->
-            <section class="d-flex flex-row justify-content-between"> 
-                <div class="mx-auto w-50 text-center FontsSize-Md L-S-3 Extra-Bold ColorDark-x Btn-Filters-sm"><a class="Btn-a" href="index.html">VER OUTFITS</a></div>
-                <div class="mx-auto w-50 text-center FontsSize-Md L-S-3 Extra-Bold ColorDark-x Btn-Filters-sm"><a class="Btn-a" href="Products.html">VER PRODUCTOS</a></div>
-            </section>
-        </header>
-        <!-- Final header -->
-    
-       <!-- Limpiar Contenedores para header dinamico -->
-       <div class="Br-Header_Clear"></div>
-       <div class="Br-sm d-block"></div>
-       <div class="Br-md d-none d-sm-block Br-xl-None"></div>
-    
-        <!-- Title Mi Bolsa -->
-        <section class=" animated fadeInDown">
-            <div class="container py-3 BK_Color_Light Box_Shadow rounded">
-                <div class="row">
-                    <div class="col">
-                        <div class="d-flex d-row align-items-center justify-content-between">
-                            <h2 class="modal-title FontsSize-Medium Black L-S-3" id="exampleModalLabel">Mi Bolsa</h2>
-                            <small class="Semibold ColorDark-xx" href="#">Lista de Productos</small>
-                        </div>
+    <!-- Title Mi Bolsa -->
+    <section class=" animated fadeInDown">
+        <div class="container py-3 BK_Color_Light Box_Shadow rounded">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex d-row align-items-center justify-content-between">
+                        <h2 class="modal-title FontsSize-Medium Black L-S-3" id="exampleModalLabel">Mi Bolsa</h2>
+                        <small class="Semibold ColorDark-xx" href="#">Lista de Productos</small>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- final Title MI Bolsa -->
+        </div>
+    </section>
+    <!-- final Title MI Bolsa -->
 
-        <div class="Br-xs d-block"></div>
+    <div class="Br-xs d-block"></div>
 
-          <!-- Content Card Producto Bag CheckOut -->
-        <section class=" animated fadeInDown">
-            <div class="container p-0">
-                <div class="Grid-Content">
-                    <!-- Lista de Productos -->
-                    <div class="p-3 rounded BK_Color_Light Card-Product-Bag Box_Shadow">
+    <!-- Content Card Producto Bag CheckOut -->
+    <section class=" animated fadeInDown">
+        <div class="container p-0">
+            <div class="Grid-Content">
+                <!-- Lista de Productos -->
+                <div class="p-3 rounded BK_Color_Light Card-Product-Bag Box_Shadow">
 
-                        <!-- Bopy Product -->
-                        <div class="Card-Product-Bag-CheckOut py-3 border-bottom">
+                    <!-- Bopy Product -->
+                    <div class="Card-Product-Bag-CheckOut py-3 border-bottom">
 
-                            <div> <!-- Image Product -->
-                                <img src="img/model_16.jpg" alt="Detalle Outfit" class="img-fluid" loading="lazy">
-                            </div>
-
-                            <div> <!-- Bopy Product -->
-                                <div class="d-flex flex-row justify-content-between align-items-center L-H-1">
-                                    <h3 class="m-0 FontsSize-Medium Extra-Bold LetterSpacing_N ColorDark-x">Blusas Unser</h3>
-                                    <a class="Black ColorDark-x CursorPointer"><i class="fas fa-times"></i></a>
-                                </div>
-                                <div>
-                                    <small class="Bold ColorDark-xx align-top FontsSize-Min">SKU: <span class="ColorGray-x Regular">822299</span></small>
-                                </div>
-                                <h4 class="m-0 FontsSize-Standar Extra-Bold ColorPrimary">$150.000 COP</h4>
-                                <p class="p-0 m-0 pt-3 Semibold ColorDark-xx FontsSize-Re L-H-4 d-none d-md-block">Págalo hasta en <span class="Extra-Bold ColorDark">10</span> cuotas quincenales de <span class="Extra-Bold ColorDark">$18.839 COP</span> (El valor de la cuota incluye aval e interes)</p>
-
-                                <!-- Selector de Tallas Colores y cantidad -->
-                                <div class="d-flex flex-row justify-content-between align-items-center L-H-1 mt-2">
-                                    <form class="d-flex flex-row justify-content-between align-items-center">
-                                        <div class="form-row align-items-center">
-
-                                            <div class="col-auto align-self-center">
-                                                <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Color</label>
-                                                <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option value="1">Azul</option>
-                                                    <option value="2">Verde</option>
-                                                    <option value="3">Marrón</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-auto align-self-center">
-                                                <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Talla</label>
-                                                <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option value="1">XS</option>
-                                                    <option value="2">S</option>
-                                                    <option value="3">M</option>
-                                                    <option value="2">L</option>
-                                                    <option value="3">XL</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-auto align-self-center">
-                                                <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Cant.</label>
-                                                <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="2">4</option>
-                                                    <option value="3">5</option>
-                                                </select>
-                                            </div>
-
-                                        </div>
-                                    </form>
-                                </div> <!-- Selector de Tallas Colores y cantidad -->
-
-                            </div><!-- Content Product -->
-
+                        <div> <!-- Image Product -->
+                            <img src="img/model_16.jpg" alt="Detalle Outfit" class="img-fluid" loading="lazy">
                         </div>
-                        <!-- Bopy Product -->
-                        <div class="Card-Product-Bag-CheckOut py-3 border-bottom">
 
-                            <div> <!-- Image Product -->
-                                <img src="img/outFit_3.jpg" alt="Detalle Outfit" class="img-fluid" loading="lazy">
+                        <div> <!-- Bopy Product -->
+                            <div class="d-flex flex-row justify-content-between align-items-center L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Extra-Bold LetterSpacing_N ColorDark-x">Blusas Unser</h3>
+                                <a class="Black ColorDark-x CursorPointer"><i class="fas fa-times"></i></a>
                             </div>
-
-                            <div> <!-- Content Product -->
-                                <div class="d-flex flex-row justify-content-between align-items-center L-H-1">
-                                    <h3 class="m-0 FontsSize-Medium Extra-Bold LetterSpacing_N ColorDark-x">Blusas Unser</h3>
-                                    <a class="Black ColorDark-x CursorPointer"><i class="fas fa-times"></i></a>
-                                </div>
-                                <div>
-                                    <small class="Bold ColorDark-xx align-top FontsSize-Min">SKU: <span class="ColorGray-x Regular">822299</span></small>
-                                </div>
-                                <h4 class="m-0 FontsSize-Standar Extra-Bold ColorPrimary">$150.000 COP</h4>
-                                <p class="p-0 m-0 pt-3 Semibold ColorDark-xx FontsSize-Re L-H-4 d-none d-md-block">Págalo hasta en <span class="Extra-Bold ColorDark">10</span> cuotas quincenales de <span class="Extra-Bold ColorDark">$18.839 COP</span> (El valor de la cuota incluye aval e interes)</p>
-
-                                <!-- Selector de Tallas Colores y cantidad -->
-                                <div class="d-flex flex-row justify-content-between align-items-center L-H-1 mt-2">
-                                    <form class="d-flex flex-row justify-content-between align-items-center">
-                                        <div class="form-row align-items-center">
-
-                                            <div class="col-auto align-self-center">
-                                                <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Color</label>
-                                                <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option value="1">Azul</option>
-                                                    <option value="2">Verde</option>
-                                                    <option value="3">Marrón</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-auto align-self-center">
-                                                <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Talla</label>
-                                                <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option value="1">XS</option>
-                                                    <option value="2">S</option>
-                                                    <option value="3">M</option>
-                                                    <option value="2">L</option>
-                                                    <option value="3">XL</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-auto align-self-center">
-                                                <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Cant.</label>
-                                                <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="2">4</option>
-                                                    <option value="3">5</option>
-                                                </select>
-                                            </div>
-
-                                        </div>
-                                    </form>
-                                </div> <!-- Selector de Tallas Colores y cantidad -->
-
-                            </div><!-- Content Product -->
-
-                        </div>
-                        <!-- Bopy Product -->
-                        <div class="Card-Product-Bag-CheckOut py-3 border-bottom">
-
-                            <div> <!-- Image Product -->
-                                <img src="img/model_7.jpg" alt="Detalle Outfit" class="img-fluid" loading="lazy">
+                            <div>
+                                <small class="Bold ColorDark-xx align-top FontsSize-Min">SKU: <span class="ColorGray-x Regular">822299</span></small>
                             </div>
+                            <h4 class="m-0 FontsSize-Standar Extra-Bold ColorPrimary">$150.000 COP</h4>
+                            <p class="p-0 m-0 pt-3 Semibold ColorDark-xx FontsSize-Re L-H-4 d-none d-md-block">Págalo hasta en <span class="Extra-Bold ColorDark">10</span> cuotas quincenales de <span class="Extra-Bold ColorDark">$18.839 COP</span> (El valor de la cuota incluye aval e interes)</p>
 
-                            <div> <!-- Content Product -->
-                                <div class="d-flex flex-row justify-content-between align-items-center L-H-1">
-                                    <h3 class="m-0 FontsSize-Medium Extra-Bold LetterSpacing_N ColorDark-x">Blusas Unser</h3>
-                                    <a class="Black ColorDark-x CursorPointer"><i class="fas fa-times"></i></a>
-                                </div>
-                                <div>
-                                    <small class="Bold ColorDark-xx align-top FontsSize-Min">SKU: <span class="ColorGray-x Regular">822299</span></small>
-                                </div>
-                                <h4 class="m-0 FontsSize-Standar Extra-Bold ColorPrimary">$150.000 COP</h4>
-                                <p class="p-0 m-0 pt-3 Semibold ColorDark-xx FontsSize-Re L-H-4 d-none d-md-block">Págalo hasta en <span class="Extra-Bold ColorDark">10</span> cuotas quincenales de <span class="Extra-Bold ColorDark">$18.839 COP</span> (El valor de la cuota incluye aval e interes)</p>
+                            <!-- Selector de Tallas Colores y cantidad -->
+                            <div class="d-flex flex-row justify-content-between align-items-center L-H-1 mt-2">
+                                <form class="d-flex flex-row justify-content-between align-items-center">
+                                    <div class="form-row align-items-center">
 
-                                <!-- Selector de Tallas Colores y cantidad -->
-                                <div class="d-flex flex-row justify-content-between align-items-center L-H-1 mt-2">
-                                    <form class="d-flex flex-row justify-content-between align-items-center">
-                                        <div class="form-row align-items-center">
-
-                                            <div class="col-auto align-self-center">
-                                                <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Color</label>
-                                                <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option value="1">Azul</option>
-                                                    <option value="2">Verde</option>
-                                                    <option value="3">Marrón</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-auto align-self-center">
-                                                <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Talla</label>
-                                                <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option value="1">XS</option>
-                                                    <option value="2">S</option>
-                                                    <option value="3">M</option>
-                                                    <option value="2">L</option>
-                                                    <option value="3">XL</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-auto align-self-center">
-                                                <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Cant.</label>
-                                                <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="2">4</option>
-                                                    <option value="3">5</option>
-                                                </select>
-                                            </div>
-
+                                        <div class="col-auto align-self-center">
+                                            <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Color</label>
+                                            <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
+                                                <option value="1">Azul</option>
+                                                <option value="2">Verde</option>
+                                                <option value="3">Marrón</option>
+                                            </select>
                                         </div>
-                                    </form>
-                                </div> <!-- Selector de Tallas Colores y cantidad -->
 
-                            </div><!-- Content Product -->
+                                        <div class="col-auto align-self-center">
+                                            <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Talla</label>
+                                            <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
+                                                <option value="1">XS</option>
+                                                <option value="2">S</option>
+                                                <option value="3">M</option>
+                                                <option value="2">L</option>
+                                                <option value="3">XL</option>
+                                            </select>
+                                        </div>
 
-                        </div>
+                                        <div class="col-auto align-self-center">
+                                            <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Cant.</label>
+                                            <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="2">4</option>
+                                                <option value="3">5</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div> <!-- Selector de Tallas Colores y cantidad -->
+
+                        </div><!-- Content Product -->
+
                     </div>
+                    <!-- Bopy Product -->
+                    <div class="Card-Product-Bag-CheckOut py-3 border-bottom">
 
-                    <!-- Content de Precios -->
-                    <div class="p-3 rounded BK_Color_Light Card-Cost Box_Shadow align-self-start">
-                        <div class="py-2 d-flex d-row align-items-center justify-content-between border-bottom ">
-                            <h2 class="modal-title FontsSize-Medium Black L-S-3" id="exampleModalLabel">Total</h2>
-                            <small class="Semibold ColorDark-xx" href="#">precio de la compra</small>
+                        <div> <!-- Image Product -->
+                            <img src="img/outFit_3.jpg" alt="Detalle Outfit" class="img-fluid" loading="lazy">
                         </div>
-                    </div>
 
+                        <div> <!-- Content Product -->
+                            <div class="d-flex flex-row justify-content-between align-items-center L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Extra-Bold LetterSpacing_N ColorDark-x">Blusas Unser</h3>
+                                <a class="Black ColorDark-x CursorPointer"><i class="fas fa-times"></i></a>
+                            </div>
+                            <div>
+                                <small class="Bold ColorDark-xx align-top FontsSize-Min">SKU: <span class="ColorGray-x Regular">822299</span></small>
+                            </div>
+                            <h4 class="m-0 FontsSize-Standar Extra-Bold">$350.000 COP</h4>
+                            <p class="p-0 m-0 pt-3 Semibold ColorDark-xx FontsSize-Re L-H-4 d-none d-md-block">Págalo hasta en <span class="Extra-Bold ColorDark">10</span> cuotas quincenales de <span class="Extra-Bold ColorDark">$18.839 COP</span> (El valor de la cuota incluye aval e interes)</p>
+
+                            <!-- Selector de Tallas Colores y cantidad -->
+                            <div class="d-flex flex-row justify-content-between align-items-center L-H-1 mt-2">
+                                <form class="d-flex flex-row justify-content-between align-items-center">
+                                    <div class="form-row align-items-center">
+
+                                        <div class="col-auto align-self-center">
+                                            <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Color</label>
+                                            <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
+                                                <option value="1">Azul</option>
+                                                <option value="2">Verde</option>
+                                                <option value="3">Marrón</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-auto align-self-center">
+                                            <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Talla</label>
+                                            <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
+                                                <option value="1">XS</option>
+                                                <option value="2">S</option>
+                                                <option value="3">M</option>
+                                                <option value="2">L</option>
+                                                <option value="3">XL</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-auto align-self-center">
+                                            <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Cant.</label>
+                                            <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="2">4</option>
+                                                <option value="3">5</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div> <!-- Selector de Tallas Colores y cantidad -->
+
+                        </div><!-- Content Product -->
+
+                    </div>
+                    <!-- Bopy Product -->
+                    <div class="Card-Product-Bag-CheckOut py-3 border-bottom">
+
+                        <div> <!-- Image Product -->
+                            <img src="img/model_7.jpg" alt="Detalle Outfit" class="img-fluid" loading="lazy">
+                        </div>
+
+                        <div> <!-- Content Product -->
+                            <div class="d-flex flex-row justify-content-between align-items-center L-H-1">
+                                <h3 class="m-0 FontsSize-Medium Extra-Bold LetterSpacing_N ColorDark-x">Accesorios Unser</h3>
+                                <a class="Black ColorDark-x CursorPointer"><i class="fas fa-times"></i></a>
+                            </div>
+                            <div>
+                                <small class="Bold ColorDark-xx align-top FontsSize-Min">SKU: <span class="ColorGray-x Regular">822299</span></small>
+                            </div>
+                            <h4 class="m-0 FontsSize-Standar Extra-Bold ColorPrimary">$730.000 COP</h4>
+                            <p class="p-0 m-0 pt-3 Semibold ColorDark-xx FontsSize-Re L-H-4 d-none d-md-block">Págalo hasta en <span class="Extra-Bold ColorDark">10</span> cuotas quincenales de <span class="Extra-Bold ColorDark">$18.839 COP</span> (El valor de la cuota incluye aval e interes)</p>
+
+                            <!-- Selector de Tallas Colores y cantidad -->
+                            <div class="d-flex flex-row justify-content-between align-items-center L-H-1 mt-2">
+                                <form class="d-flex flex-row justify-content-between align-items-center">
+                                    <div class="form-row align-items-center">
+
+                                        <div class="col-auto align-self-center">
+                                            <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Color</label>
+                                            <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
+                                                <option value="1">Azul</option>
+                                                <option value="2">Verde</option>
+                                                <option value="3">Marrón</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-auto align-self-center">
+                                            <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Talla</label>
+                                            <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
+                                                <option value="1">XS</option>
+                                                <option value="2">S</option>
+                                                <option value="3">M</option>
+                                                <option value="2">L</option>
+                                                <option value="3">XL</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-auto align-self-center">
+                                            <label class="Label-Bag m-0 p-0" for="inlineFormCustomSelect">Cant.</label>
+                                            <select class="custom-select Select-Bag-Custom mr-sm-2" id="inlineFormCustomSelect">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="2">4</option>
+                                                <option value="3">5</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div> <!-- Selector de Tallas Colores y cantidad -->
+
+                        </div><!-- Content Product -->
+
+                    </div>
                 </div>
+
+                <!-- Content de Precios -->
+                <div class="p-3 rounded BK_Color_Light Card-Cost Box_Shadow align-self-start sticky-top">
+                    <div class="py-2 d-flex d-row align-items-center justify-content-between border-bottom ">
+                        <h2 class="modal-title FontsSize-md-pa Black L-S-3">Total</h2>
+                        <small class="Semibold ColorDark-xx" href="#">precio de la compra</small>
+                    </div>
+                    <div class="mt-3 py-2 d-flex d-row align-items-center justify-content-between">
+                        <h2 class="modal-title FontSize-Med Black L-S-2 text-uppercase">Total En Efectivo</h2>
+                        <h2 class="modal-title FontSize-Med Black L-S-2">$3.550.477 COP</h2>
+                    </div>
+                    <div class="m-0 p-0 d-flex d-row align-items-center justify-content-between">
+                        <h2 class="modal-title ColorDark-xx FontsSize-Re Black L-S-2">Total Con Cupo</h2>
+                        <h2 class="modal-title ColorDark-xx FontsSize-Re Black L-S-2">$4.750.477 COP</h2>
+                    </div>
+                    <div class="Hr"></div>
+                    <div class="my-3 d-flex d-row justify-content-center text-center">
+                        <a href="index.html" class="btn text-uppercase w-100 Btn-Reset Black BK_Color_Primary FontsSize-Md L-S-3 Btn-a-Light shadow-sm"><i class="fas fa-shipping-fast"></i> <span class="align-middle"> Solicitar Pedido</span></a>
+                    </div>
+                </div>
+
             </div>
-        </section>
-        <!-- final Card Producto en Bolsa -->
+        </div>
+    </section>
+    <!-- final Card Producto en Bolsa -->
     
-        <div class="Br-xxs" ></div>
-        <div class="Br-sm d-none d-md-block"></div>
+    <div class="Br-xxs" ></div>
+    <div class="Br-sm d-none d-md-block"></div>
 
     <!-- div para carga dinamica de las marcas -->
     <footer class="px-3 py-4 BK-Footer">

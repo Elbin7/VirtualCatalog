@@ -110,7 +110,7 @@
 .FontsSize-23 { font-size: 23px!important;}
 .FontsSize-24 { font-size: 24px!important;}
 .FontsSize-lg { font-size: 30px!important;}
-.FontsSize-LG { font-size: 45px!important;}
+.FontsSize-45 { font-size: 45px!important;}
 
 /***************  Letter Spacing  ***************/
 
@@ -374,7 +374,6 @@
 }
 
 
-
 /* Animación Modal */ 
 .fadeInDownModal {
     -webkit-animation-name: fadeInDown;
@@ -415,8 +414,8 @@
     align-items: flex-end;
 }
 
-
 /* ************ */
+
 
 
 .Card-Producto {
@@ -494,6 +493,10 @@
     margin-bottom: 0rem;
     width: 1vh;
     font-weight: 600;
+}
+
+.Margin-Contetn_Dinamic >* {
+    margin: 0.35rem;
 }
 
 
