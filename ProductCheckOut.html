@@ -19,7 +19,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!--  hoja de estilos -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?=1.-">
     <link rel="stylesheet" href="css/animate.css">
     <script src="js/main.js" charset="utf-8" type="text/javascript"></script> <!-- carpeta javascript -->
 
@@ -48,7 +48,7 @@
 
 <body>
 
-        <!-- Header con scrollview dinamico -->
+    <!-- Header con scrollview dinamico -->
     <header amp-fx="float-in-top" class="Header-Dinamic Box_Shadow">
         <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light">
             <div class="container d-inline-flex align-items-center">
@@ -67,13 +67,13 @@
                         <a class="IconHeader" href="#"><i class="fas fa-shopping-bag FontsSize-Medium"></i> <span class="badge Badge-Bag">4</span></a>
                     </li>
                     <li class="list-inline-item nav-item mr-3">
-                        <a on="tap:FilterSidebar" class="IconHeader"><i class="fas fa-filter"></i></a>
+                        <a on="tap:FilterSidebar" class="IconHeader CursorPointer"><i class="fas fa-filter"></i></a>
                     </li>
                 </ul>
             </div><!--  cierre de container  -->
         </nav>
 
-        <!-- div para carga dinamica de las marcas -->
+        <!-- div para carga dinámica de las marcas -->
         <div class="BranchLogo d-flex justify-content-center BK_Color_Primary">
             <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/Stirpe_Logo.png" type="img/png" alt="LogoStirpe" class="StirpeImg"></a>            
         </div>
@@ -95,15 +95,78 @@
     <div>
         <amp-sidebar id="FilterSidebar" layout="nodisplay" style="width:80%">
             <amp-nested-menu layout="fill">
-                <ul>
-
-                    <li class="py-4 px-3 BK_Color_Light shadow-sm">
-                        <h4 amp-nested-submenu-open class="m-0 text-uppercase Black FontSize-Med L-S-3"><strong><i class="fas fa-store mr-1"></i></strong> Productos Catálogo 2</h4>          
+                <ul class="FullHeight">
+    
+                    <li class="py-4 px-3 mb-3 BK_Color_Light Box_Shadow">
+                        <h4 class="m-0 text-uppercase Black FontsSize-Title L-S-3"><strong><i class="fas fa-store mr-1"></i></strong> Productos Catálogo</h4> 
                     </li>
-                    <li>
-                        <a href="https://amp.dev/">Link</a>
+                    <li class="mb-3 BK_Color_Light Box_Shadow">
+                        <section class="d-flex flex-row justify-content-between"> 
+                            <a class="mx-auto py-3 w-50 text-center text-uppercase FontsSize-Title L-S-3 Extra-Bold ColorDark Btn-Filters-sm Btn-a active" href="">Hombre</a>
+                            <a class="mx-auto py-3 w-50 text-center text-uppercase FontsSize-Title L-S-3 Extra-Bold ColorDark Btn-Filters-sm Btn-a" href="">Mujer</a>
+                        </section>
                     </li>
-
+                    <li class="Box_Shadow">
+    
+                        <ul class="FullHeight HeightScrollFilter Overflow-Auto">
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
+                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4> 
+                            </li>
+    
+                        </ul>
+            
+                    </li>
+                    <li class="fixed-bottom p-3 BK_Color_Light Box_Shadow">
+                        <div class="d-flex d-row justify-content-center text-center align-items-center">
+                            <a href="index.html" class="btn text-uppercase w-100 Btn-Reset Black BK_Color_Primary FontsSize-Md L-S-3 Btn-a-Light shadow-sm align-middle"><strong><i class="fas fa-box-open"></i></strong> <span>&nbsp; Ver Todos</span></a>
+                        </div>
+                    </li>
+    
                 </ul>
             </amp-nested-menu>
         </amp-sidebar>
@@ -351,7 +414,7 @@
     <div class="Br-xxs" ></div>
     <div class="Br-sm d-none d-md-block"></div>
 
-    <!-- div para carga dinamica de las marcas -->
+    <!-- div para carga dinámica de las marcas -->
     <footer class="px-3 py-4 BK-Footer">
         <div class="container d-flex flex-row justify-content-between align-items-center">
             <div><a href="" target="blank" class="align-self-center Extra-Bold ColorDark-x Btn-a FontsSize-Md text-uppercase L-S-1">&#169; 2020 Baguer</a></div>
