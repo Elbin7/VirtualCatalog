@@ -230,7 +230,7 @@
     background-color: rgba(0,0,0,0.5);
     animation-name: i-amphtml-sidebar-mask-fade-out;
     z-index: 2147483646;
-    background-image: url(/img/times-solid.png)!important;
+    background-image: url("../img/times-solid.png")!important;
     background-repeat: no-repeat;
     background-position: top right;
     background-size: initial;
