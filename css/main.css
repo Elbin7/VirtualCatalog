@@ -80,13 +80,14 @@
 .Bk-Contain { background-position: center center; background-repeat: no-repeat; background-size: contain; }
 .Bk-Fixed   { background-position: center top; background-repeat: no-repeat; background-attachment: fixed; }
 
-.PositionRelative { position: relative !important; }
+.PositionRelative     { position: relative !important; }
+.PositionAbsolute-B   { position: absolute !important; bottom: 0!important; left: 0!important; }
 
-.Display-None { display: none!important;}
+.Display-None         { display: none!important;}
 
-.OverflowScroll   { overflow: scroll;}
-.Overflow-Hidden   { overflow: hidden!important;}
-.Overflow-Auto   { overflow: auto!important;}
+.OverflowScroll       { overflow: scroll;}
+.Overflow-Hidden      { overflow: hidden!important;}
+.Overflow-Auto        { overflow: auto!important;}
 
 /************* Clases Basicas de Margenes *************/
 
