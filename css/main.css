@@ -221,6 +221,24 @@
 
 /* ********  iconos  ****** */
 
+.i-amphtml-sidebar-mask {
+    position: fixed!important;
+    top: 0!important;
+    left: 0!important;
+    width: 100%!important;
+    height: 100vh!important;
+    background-color: rgba(0,0,0,0.5);
+    animation-name: i-amphtml-sidebar-mask-fade-out;
+    z-index: 2147483646;
+    background-image: url(/img/times-solid.png)!important;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: initial;
+ 
+}
+
+
+
 .fa-shopping-bag:before {
     content: "\f290";
 }

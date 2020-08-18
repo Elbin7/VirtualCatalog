@@ -19,7 +19,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!--  hoja de estilos -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?-124">
     <link rel="stylesheet" href="css/animate.css">
     <script src="js/main.js" charset="utf-8" type="text/javascript"></script> <!-- carpeta javascript -->
 
@@ -33,16 +33,24 @@
 
     <!-- icono para el navegador-->
     <link rel="shortcut icon" href="img/book-open-solid.svg" type="img/svg">
-         <!-- Codigo para librerias de fx amp -->
+
+    <!-- Codigo para librerias de fx amp -->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <!-- Sidebar Menu Construction -->
+    <script async custom-element="amp-nested-menu" src="https://cdn.ampproject.org/v0/amp-nested-menu-0.1.js"></script>
+    <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async></script>
+
+    <!-- Header Construction Component -->
     <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
         <!-- Header con scrollview dinamico -->
     <header amp-fx="float-in-top" class="Header-Dinamic Box_Shadow">
-        <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light animated fadeInLeft">
+        <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light">
             <div class="container d-inline-flex align-items-center">
                 <!-- identidad marca -->
                 <div class="Display-Grid LineHeight-Initial">
@@ -59,14 +67,14 @@
                         <a class="IconHeader" href="#"><i class="fas fa-shopping-bag FontsSize-Medium"></i> <span class="badge Badge-Bag">4</span></a>
                     </li>
                     <li class="list-inline-item nav-item mr-3">
-                        <a class="IconHeader" href="#"><i class="fas fa-filter"></i></a>
+                        <a on="tap:FilterSidebar" class="IconHeader"><i class="fas fa-filter"></i></a>
                     </li>
                 </ul>
             </div><!--  cierre de container  -->
         </nav>
 
         <!-- div para carga dinamica de las marcas -->
-        <div class="BranchLogo d-flex justify-content-center BK_Color_Primary animated fadeInRight">
+        <div class="BranchLogo d-flex justify-content-center BK_Color_Primary">
             <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/Stirpe_Logo.png" type="img/png" alt="LogoStirpe" class="StirpeImg"></a>            
         </div>
 
@@ -82,7 +90,30 @@
     <div class="Br-Header_Clear"></div>
     <div class="Br-sm d-block"></div>
     <div class="Br-md d-none d-sm-block Br-xl-None"></div>
-    
+
+    <!-- Sidebar Menu para filtro de Productos -->
+    <div>
+        <amp-sidebar id="FilterSidebar" layout="nodisplay" style="width:80%">
+            <amp-nested-menu layout="fill">
+                <ul>
+
+                    <li class="py-4 px-3 BK_Color_Light shadow-sm">
+                        <h4 amp-nested-submenu-open class="m-0 text-uppercase Black FontSize-Med L-S-3"><strong><i class="fas fa-store mr-1"></i></strong> Productos Catálogo 2</h4>          
+                    </li>
+                    <li>
+                        <a href="https://amp.dev/">Link</a>
+                    </li>
+
+                </ul>
+            </amp-nested-menu>
+        </amp-sidebar>
+    </div>
+
+    <!-- Profesora: Benito si yo digo: "Yo trabajo" que tiempo es?
+    Benito: profesora eso es "Tiempo presente"
+    Profesora: Muuuy Bien Muuuy Bien .. y si yo digo "yo busco novio" que tiempo es?
+    Benito: profesora eso es "Tiempo Perdido" jaaaa -->
+
     <!-- Title Mi Bolsa -->
     <section class=" animated fadeInDown">
         <div class="container py-3 BK_Color_Light Box_Shadow rounded">
@@ -348,7 +379,6 @@
                 <a href="https://api.whatsapp.com/"><img src="img/Asset_1.svg" alt="LogoWhatsapp"></a>
             </div >
         </div>
-
          
         
 </body>
