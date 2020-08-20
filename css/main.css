@@ -81,7 +81,8 @@
 .Bk-Fixed   { background-position: center top; background-repeat: no-repeat; background-attachment: fixed; }
 
 .PositionRelative     { position: relative !important; }
-.PositionAbsolute-B   { position: absolute !important; bottom: 0!important; left: 0!important; }
+.PositionAbsolute-B   { position: fixed !important; bottom: 0!important; left: 0!important;}
+.Height-100           { height: 100px;  }
 
 .Display-None         { display: none!important;}
 
@@ -96,6 +97,7 @@
 .MarginRight-Button { margin-right: 40px !important; }
 .MarginGeneral { margin: 5px 10px;}
 .Margin-Check-Content { margin-left: 45%!important; margin-right: 50%!important; }
+.Padding-Card-Body { padding: 0.90rem 0.75rem !important; }
 
 
 /************* Fuentes Tamaños *************/
@@ -107,6 +109,7 @@
 .FontsSize-Re { font-size: 14px !important;}
 .FontSize-Med { font-size: 15px!important;}
 .FontsSize-Title { font-size: 16px!important;}
+.FontsSize-17 { font-size: 17px!important;}
 .FontsSize-Standar { font-size: 18px!important;}
 .FontsSize-Medium { font-size: 19px!important;}
 .FontsSize-md-pa { font-size: 22px!important;}
@@ -440,11 +443,10 @@
 /* ************ */
 
 
-
 .Card-Producto {
     border: none;
     border-radius: 0rem!important;
-    box-shadow: 0 0 4px #00000015;
+    box-shadow: 0 0 6px #00000023;
 }
 .Card-Footer {
     padding: 0rem;
@@ -452,6 +454,7 @@
     border: none;
     border-radius: 0rem;
 }
+
 
 /* .Card-Img { flex-shrink: 0; width: 100%; border-top-left-radius: 0rem !important; border-top-right-radius: 0rem !important; } */
 
@@ -461,7 +464,6 @@
     border-color: #138cad;
     background-color: var(--primary);
 }
-
 .custom-control-label::before {
     position: absolute;
     top: .25rem;
@@ -474,7 +476,6 @@
     background-color: #fff;
     border: #adb5bd solid 1px;
 }
-
 .custom-control-label::after {
     position: absolute;
     top: .25rem;
@@ -485,7 +486,6 @@
     content: "";
     background: no-repeat 50%/50% 50%;
 }
-
 .Select-Bag-Custom {
     display: inline-block;
     width: 100%;
@@ -509,7 +509,6 @@
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(49, 179, 240, 0.109);
 }
-
 .Label-Bag {
     font-size: 12px;
     display: inline-block;
@@ -517,10 +516,10 @@
     width: 1vh;
     font-weight: 600;
 }
-
 .Margin-Contetn_Dinamic >* {
     margin: 0.35rem;
 }
+
 
 
 /* Sistema Grid para Ventana de Bag CheckOut */
@@ -564,6 +563,126 @@
 /* **************************** */
 
 
+amp-nested-menu, amp-nested-menu [amp-nested-submenu] {
+    position: absolute!important;
+    top: 0!important;
+    width: 100%!important;
+    height: 100%!important;
+    padding: 0!important;
+    transform: translateX(0)!important;
+    margin: 0 auto -100px!important;
+}
+
+
+
+/******   Divs para cargar de productos dinamicos  *******/
+
+.Img-Product { 
+    background: url("../img/outFit_2.jpg");
+    height: 30vh;
+    width: auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Img-Product_2 { 
+    background: url("../img/model_10.jpg");
+    height: 30vh;
+    width: auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Img-Product_3 { 
+    background: url("../img/zapatos_2.jpg");
+    height: 30vh;
+    width: auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Img-Product_4 { 
+    background: url("../img/model_16.jpg");
+    height: 30vh;
+    width: auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Selector de Colores de productos */
+.producto-colores li {
+    transition: all .5s ease;
+    margin-bottom: 0px;
+}
+.producto-colores a.producto-color-hx {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    border: 1px solid #e1e7ec;
+    transform: scale(0.8);
+    transition: transform 150ms ease-in-out;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+.producto-colores li.is_selected:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #d7dce2;
+    top: 50%;
+    margin-top: -13px;
+    margin-left: 3px;
+    border-radius: 50%;
+}
+.producto-colores li:hover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #bac2cc;
+    top: 50%;
+    margin-top: -13px;
+    margin-left: 3px;
+    border-radius: 50%;
+}
+
+/* ****************************************** */
+
+/* Selector de Guía de Tallas de productos */
+.producto-tallas a.producto-talla-item {
+    display: block;
+    height: 30px;
+    min-width: 30px;
+    font-size: 0.6rem;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 0px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #9da9b9;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+.producto-tallas .is_selected {
+    background-color: #0da9ef !important;
+    border-color: #0da9ef;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+.producto-tallas a.producto-talla-item:hover {
+    background-color: #0da9ef;
+    border-color: #0da9ef;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
 

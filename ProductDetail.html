@@ -134,31 +134,78 @@
                         <!-- card dinamico Outifits -->
                         <div class="mb-3 p-3">
                             <div class="d-flex flex-row justify-content-between align-items-center L-H-1">
-                                <h3 class="m-0 FontsSize-23 Semibold ColorDark-xx">Blusas <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
+                                <h3 class="m-0 FontsSize-24 Semibold ColorDark-xx">Blusas <span class="Extra-Bold LetterSpacing_N ColorDark-x">UNSER</span></h3>
                                 <small class="Semibold ColorDark-xx">SKU: <span class="ColorGray-x">822299</span></small>
                             </div>
 
-                            <div class="Br-xxs d-none d-md-block" ></div>
-                            <h4 class="m-0 mb-3 FontsSize-Standar Extra-Bold ColorPrimary">$150.000 COP</h4>
-                            <div class="Br-xxs d-none d-md-block" ></div>
+                            <h4 class="m-0 mt-1 mb-3 FontsSize-Medium Extra-Bold ColorPrimary">$150.000 COP</h4>
 
-                            <div class="d-flex d-row align-items-center justify-content-between mb-3">
-                                <a class="Display-None W-48 text-center p-0 py-2 text-uppercase FontsSize-Re L-S-3 Black ColorDark-x Btn-mas_Productos Btn-a" href="" data-toggle="modal" data-target="#exampleModal">Tallas</a>
+                            <!-- Colores de Producto Select -->
+                            <div class="d-flex flex-column PositionRelative mt-2">
+                                <div class="d-flex align-items-center FontsSize-Title"><span class="text-medium mr-3 Extra-Bold text-uppercase">Color</span><span class="text-muted lblcolor_feedback">  Azul</span>
+                                </div>
 
-                                <!-- Content para cuando el usuario seleccionó las Tallas -->
-                                <a class="W-48 text-center p-0 py-2 text-uppercase FontsSize-Re L-S-3 Black ColorDark-x Btn-mas_Productos Btn-a" href="" data-toggle="modal" data-target="#exampleModal"> <span class="text-capitalize Extra-Bold LetterSpacing_N ColorDark-xx">Tallas: &nbsp;</span> M - L</a>
-
-                                <a class="Display-None W-48 text-center p-0 py-2 text-uppercase FontsSize-Re L-S-3 Black ColorDark-x Btn-mas_Productos Btn-a" href="" data-toggle="modal" data-target="#ModalSelectorColors">Color</a>
-                                
-                                <!-- Content para cuando el usuario selecciona los colores -->
-                                <a class="W-48 text-center p-0 py-2 text-uppercase FontsSize-Re L-S-3 Black ColorDark-x Btn-mas_Productos Btn-a" href="" data-toggle="modal" data-target="#ModalSelectorColors"> <span class="text-capitalize Extra-Bold LetterSpacing_N ColorDark-xx">Color: &nbsp;</span> Azul</a>
-
+                                <div class="d-flex mt-2 mb-4">
+                                    <ul class="nav producto-colores">
+                                        <li class="nav-item producto-color" data-tallas="SS|MM|LL|XL|XXL" data-colortxt="AZUL" data-color="AZ"
+                                            data-colorhx="#2196F3">
+                                            <a href="#" data-tallas="SS|MM|LL|XL|XXL" data-color="AZ" title="AZUL"
+                                                class="nav-link p-0 producto-color-hx"
+                                                style="background: url('https://stirpe.co/photos/large/819668AZ+Z.jpg') 50% 50% no-repeat #2196F3; background-size: cover;"></a>
+                                        </li>
+                                        <li class="nav-item producto-color is_selected" data-tallas="SS|MM|LL|XL|XXL" data-colortxt="BLANCO"
+                                            data-color="BL" data-colorhx="#FFFFFF">
+                                            <a href="#" data-tallas="SS|MM|LL|XL|XXL" data-color="BL" title="BLANCO"
+                                                class="nav-link p-0 producto-color-hx"
+                                                style="background: url('https://stirpe.co/photos/large/819668BL+Z.jpg') 50% 50% no-repeat #FFFFFF; background-size: cover;"></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="d-flex d-row align-content-center align-items-center">
+                            <!-- Colores de Producto Select Final -->
+
+                            <!-- Seleccion de Tallas -->
+                            <div class="d-flex flex-column mb-2">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <span class="FontSize-Med Extra-Bold mr-2">TALLA</span> <span class="text-muted text-uppercase FontSize-Med lbltalla_feedback">s</span>
+                                    </div>
+
+                                    <a href="" data-toggle="modal" data-target="#Modal-Guia_Tallas" class=" m-0 Semibold ColorDark-xx FontsSize-Md L-H-4">GUía de Tallas - <span class="Extra-Bold ColorPrimary"> Ver Más</span></a>
+                                </div>
+                                <div class="d-flex mt-3">
+                                    <ul class="nav producto-tallas">
+                                        <li data-talla="SS" class="nav-item producto-talla mr-2">
+                                            <a data-talla="SS" class="nav-link producto-talla-item T-SS is_selected">
+                                                S </a>
+                                        </li>
+                                        <li data-talla="MM" class="nav-item producto-talla mr-2">
+                                            <a data-talla="MM" class="nav-link producto-talla-item T-MM">
+                                                M </a>
+                                        </li>
+                                        <li data-talla="LL" class="nav-item producto-talla mr-2">
+                                            <a data-talla="LL" class="nav-link producto-talla-item T-LL">
+                                                L </a>
+                                        </li>
+                                        <li data-talla="XL" class="nav-item producto-talla mr-2">
+                                            <a data-talla="XL" class="nav-link producto-talla-item T-XL">
+                                                XL </a>
+                                        </li>
+                                        <li data-talla="XXL" class="nav-item producto-talla mr-2">
+                                            <a data-talla="XXL" class="nav-link producto-talla-item T-XXL">
+                                                XXL </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                           <!--  Seleccionde Tallas FInal -->
+
+                         
+                            <div class="d-flex d-row align-content-center align-items-center mt-3">
                                 <a class="align-self-center btn my-auto text-uppercase w-100 Btn-Reset Black Btn-a-Light BK-Color-Dark FontsSize-Md L-S-2 shadow-sm" href="" data-toggle="modal" data-target="#Outfit-CheckOut"><span class="fas fa-shopping-bag mr-2 FontsSize-Min align-middle"></span> <span class="align-middle">Añadir a la Bolsa</span></a> 
                             </div>
 
-                            <div class="Br-sm" ></div>
+                            <div class="Br-xs" ></div>
                             
                             <div class="d-flex d-row align-items-center justify-content-between">
                                 <h4 class="m-0 FontsSize-Title Extra-Bold L-S-1">Detalles del Producto</h4>
