@@ -658,17 +658,16 @@ amp-nested-menu, amp-nested-menu [amp-nested-submenu] {
 /* Selector de Guía de Tallas de productos */
 .producto-tallas a.producto-talla-item {
     display: block;
-    height: 30px;
-    min-width: 30px;
+    /* height: 30px; */
+    /* min-width: 30px; */
     font-size: 0.6rem;
     line-height: 30px;
     text-align: center;
     letter-spacing: 1.5px;
-    padding: 0px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    margin: 0rem;
     border: 1px solid #9da9b9;
     transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    padding: 0px 10px;
 }
 .producto-tallas .is_selected {
     background-color: #0da9ef !important;
