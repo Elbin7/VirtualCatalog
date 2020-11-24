@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <title>Stirpe Pasarela de Pagos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#059adf">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#059adf">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#059adf">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--  hoja de estilos -->
+    <link rel="stylesheet" href="css/main.css?=">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/main.js" charset="utf-8" type="text/javascript"></script> <!-- carpeta javascript -->
+
+    <!--  Conector de fuentes de google-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Conector de iconos a utilizar -->
+    <link href="/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <script src="https://kit.fontawesome.com/9645d248d7.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- icono para el navegador-->
+    <link rel="shortcut icon" href="img/book-open-solid.svg" type="img/svg">
+
+    <!-- Codigo para librerias de fx amp -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <!-- Sidebar Menu Construction -->
+    <script async custom-element="amp-nested-menu" src="https://cdn.ampproject.org/v0/amp-nested-menu-0.1.js"></script>
+    <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async></script>
+
+    <!-- Header Construction Component -->
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header para Autenticar Cliente -->
+        <section class="animated fadeInDown">
+            <div class="py-4 BK-Color-Dark Box_Shadow">
+                <div class="container">
+                    <div class="px-2 d-flex d-row align-items-center justify-content-between">
+                        <a href="#" target="blank" class="align-self-center"><img src="img/StirpelogoLight.svg" type="img/svg" alt="LogoStirpe" class="StirpeImg"></a> 
+                        <small class="Semibold Color-Light align-self-end" href="#">Autenticar Cliente</small>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                
+            </div>
+        </section>
+
+
+        <!-- Content ESTRUCTURA FULL PAGINA PARA -Clase con FULHEITCALCULADO -->
+        <section class="animated fadeInDown HeightWindow PaddingCotentRespsonive overflow-auto">
+
+            <!-- Content Responsivo con Mediaqereis -->
+            <div class="ContentResposinve BK_Color_Light">
+
+
+                    <!-- Título de la Seccion -->
+                    <div class="d-flex flex-column align-items-center justify-content-center ">
+                        <img src="img/RecibodePago.svg" type="img/svg" alt="ImgAutenticarse" class="ImgAutenticarse img-fluid">
+                        <h4 class="pt-4 pb-1 Semibold L-S-05">Direccion de Envio</h4>
+                        <small class="text-center pb-3 ColorGray-x FontSize-Med L-H-3" href="#">Para garantizar el envio de tu pedido, es importante que completes los siguientes datos.</small> 
+
+                    </div>
+
+
+                    <!-- SEPARADORES -->
+                    <div class="Hr"></div>
+
+
+                    <!-- CONTENT PARA FORMULARIO Y DATOS -->
+                    <div class="d-flex flex-column align-items-start justify-content-center py-4">
+
+
+                        <!-- Datos de Envio -->
+                        <form class="px-2 w-100 ">
+
+
+                            <!-- INPUT NOMBRE -->
+                            <div class="form-group mb-4">
+                                <label class="Extra-Bold mb-1">Nombre</label>
+                                <input type="text" name="Nombre" class="form-control InputRegister" placeholder="Nombres" required >
+                            </div>
+
+                            <!-- INPUT Apellidos -->
+                            <div class="form-group mb-4">
+                                <label class="Extra-Bold mb-1">Apellidos</label>
+                                <input type="text" name="Apellido" class="form-control InputRegister" placeholder="Apellidos" required >
+                            </div>
+
+                            <!-- INPUT Numero de Cedula -->
+                            <div class="form-group mb-4">
+                                <label class="Extra-Bold mb-1">Documento de Identidad (Cédula)</label>
+                                <input type="number" name="Documento" class="form-control InputRegister" placeholder="Documento" required >
+                            </div>
+                            
+                            <!-- INPUT EMAIL -->
+                            <div class="form-group mb-4">
+                                <label class="Extra-Bold mb-1">Correo Electrónico</label>
+                                <input type="email" class="form-control InputRegister"  aria-describedby="emailHelp" placeholder="Ingresa tu correo">
+                                <small id="emailHelp" class="form-text text-muted ">Es importante que ingreses un correo valido.</small>
+                            </div>
+
+                            <!-- INPUT TELEFONO -->
+                            <div class="form-group mb-4">
+                                <label class="Extra-Bold mb-1">Número de Teléfono</label>
+                                <input type="tel" id="phonenum" name="Phone" class="form-control InputRegister" placeholder="Número de teléfono" required >
+                            </div>
+
+                            <!-- INPUT cumpleaños -->
+                            <div class="form-group mb-4">
+                                <label class="Extra-Bold mb-1">Tú Cumpleaños</label>
+                                <input type="date" name="cumpleaños" class="form-control InputRegister" placeholder="Cumppleaños" required >
+                            </div>
+
+                            <!-- INPUT Direccion de Envio -->
+                            <div class="form-group mb-4">
+                                <label class="Extra-Bold mb-1">Dirreción de Envio</label>
+                                <input type="text" name="Direccion" class="form-control InputRegister" placeholder="Direccion de Envio" required >
+                                <small id="AddresHelp" class="form-text text-muted ">Es importante que ingreses una direccion correcta.</small>
+                            </div>
+
+                            <!-- INPUT Departamento -->
+                            <div class="form-group mb-4">
+                                <label class="Extra-Bold mb-1">Departamento</label>
+                                <input type="text" name="Departamento" class="form-control InputRegister" placeholder="Departamento" required >
+                            </div>
+
+                            <!-- INPUT Ciudad -->
+                            <div class="form-group mb-4">
+                                <label class="Extra-Bold mb-1">Ciudad</label>
+                                <input type="text" name="Departamento" class="form-control InputRegister" placeholder="Ciudad" required >
+                            </div>
+
+                            <!-- INPUT Ciudad -->
+                            <div class="form-group mb-4">
+                                <label class="Extra-Bold mb-1">Barrio</label>
+                                <input type="text" name="Departamento" class="form-control InputRegister" placeholder="Barrio" required >
+                            </div>
+
+
+
+                            <!-- <button type="submit" class="btn btn-primary w-100 BTN-Inputs Box_Shadow">Continuar</button> -->
+                            <a href="ProductCheckOutFinal.html" class="btn w-100 rounded text-center mb-3 mt-3 Btn-Reset BTN-Inputs Box_Shadow">Continuar</a>
+
+                        </form>
+
+                        
+                    </div>
+
+
+                    <!-- SEPARADORES -->        
+                    <div class="Hr4 mt-4"></div>
+                    
+                    <div class="d-flex align-items-center justify-content-center text-center py-4">
+
+                        <h2 class="pr-2 m-0 FontsSize-Title ColorGray-x Bold">Cancelar Autenticación</h2>
+                        <a href="SesionVerificacionCodigo.html" class="text-center FontsSize-17 Black L-S-05 ColorPrimary"> <u>Volver</u> </a>
+                        
+                    </div>
+                
+            </div>    
+           <!-- Content Info Responsivo con Mediaqereis -->
+        </section>
+        <!-- final Card Producto en Bolsa -->
+
+     
+
+        <!-- Footer -->
+        <footer class="px-3 py-4 BK-Footer">
+            <div class="container d-flex flex-row justify-content-between align-items-center">
+                <div><a href="" target="blank" class="align-self-center Extra-Bold ColorDark-x Btn-a FontsSize-Md text-uppercase L-S-1">&#169; 2020 Baguer</a></div>
+                <div><a href="https://stirpe.co/politica-de-privacidad/" target="blank" class="align-self-center pl-4 float-left Semibold ColorDark-x Btn-a FontsSize-Md Border-Left">Términos y Condiciones</a></div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity=" sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin=" anonymous "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity=" sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin=" anonymous "></script>
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+        integrity=" sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+        crossorigin=" anonymous "></script> 
+
+</body>
+
+</html>

@@ -34,6 +34,7 @@
     <!-- icono para el navegador-->
     <link rel="shortcut icon" href="img/book-open-solid.svg" type="img/svg">
 
+    
     <!-- Codigo para librerias de fx amp -->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
@@ -48,35 +49,27 @@
 
 <body>
 
-
     <!-- Header con scrollview dinamico -->
     <header amp-fx="float-in-top" class="Header-Dinamic Box_Shadow">
         <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light">
             <div class="container d-inline-flex align-items-center">
-                
-                <!--Perfil del Promotor -->
-                <div class="mr-2">
-                    <img src="img/Place_Holder_2.png" type="img/png" alt="UserProfile" class="ImgUserPromotor img-thumbnail-Profile">
-                </div>
-
-                <div class="d-flex flex-column justify-content-start align-items-start LineHeight-Initial">
-                    <small class="Medium FontsSize-Min ColorDark-xx" href="#">Promotor Stirpe University</small>
-                    <a class="m-0 p-0 navbar-brand FontsSize-Re Black L-S-1" href="#">Fabian Barrera Baguer</a>
-                    <!-- <small class="Medium ColorDark-xx" href="#">Este catálogo es para ti</small> -->
+                <!-- identidad marca -->
+                <div class="Display-Grid LineHeight-Initial">
+                    <a class="navbar-brand text-uppercase pb-0 FontsSize-Re Black L-S-1" href="#">¡HOLA BAGUER!</a>
+                    <small class="Semibold ColorDark-xx" href="#">Bienvenido, esto es para ti</small>
                 </div>           
-            <!--<button class="navbar-toggler border-0 IconMenuToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <!--     <button class="navbar-toggler border-0 IconMenuToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars" aria-hidden="true"></i>
                 </button> -->
-
                 <!--  Lista de menu superior  -->
                 <ul class="list-inline ml-auto">
-                    <li class="list-inline-item nav-item">
+                    <li class="list-inline-item nav-item mr-4">
                         <a class="IconHeader" href="#"><i class="fas fa-shopping-bag FontsSize-Medium ColorDark-x"></i> <span class="badge Badge-Bag">4</span></a>
                     </li>
-                    <!-- <li class="list-inline-item nav-item mr-3">
+                    <li class="list-inline-item nav-item mr-3">
                         <a on="tap:FilterSidebar" class="IconHeader CursorPointer ColorDark-x"><i class="fas fa-filter"></i></a>
-                    </li> -->
+                    </li>
                 </ul>
             </div><!--  cierre de container  -->
         </nav>
@@ -93,10 +86,7 @@
         </section>
     </header>
     <!-- Final header -->
-
-
     
-
     <!-- Limpiar Contenedores para header dinamico -->
     <div class="Br-Header_Clear"></div>
     <div class="Br-sm d-block"></div>
@@ -197,8 +187,6 @@
     </section>
     <!-- final Title MI Bolsa -->
 
-
-    
     <div class="Br-xs d-block"></div>
 
     <!-- Content Card Producto Bag CheckOut -->
@@ -393,39 +381,75 @@
                     </div>
                 </div>
 
-                <!-- Content de Precios -->
+                
+                
+                <!-- Content de proceso resumen de envio y pagos -->
                 <div class="p-3 rounded BK_Color_Light Card-Cost Box_Shadow align-self-start sticky-top">
+
+                    <!-- Titulo seccion de Pagos -->
                     <div class="py-2 d-flex d-row align-items-center justify-content-between border-bottom ">
+                        <h2 class="FontsSize-Medium Black L-S-1">Datos de Pago</h2>
+                        <small class="Semibold ColorDark-xx" href="#">Datos de Cliente</small>
+                    </div>
+
+
+                    <!-- Titulo direccion de envio Y bOTón de Modificar Direccion de Envio-->
+                    <div class="d-flex flex-row align-items-center justify-content-between py-3">
+                        <h6 class="m-0 Bold L-S-05">Dirección de Envio</h6>
+                        <button class="btn btn-primary Border-Button-1 Box_Shadow  BTN-EnviarCodigo   Padding-Rese-Button" data-toggle="modal" data-target="#Outfit-CheckOut"  type="submit">Cambiar +</button>
+                    </div>
+
+                    <!-- Lista de Datos-->
+                    <div class="mb-3">
+                        <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">Elbin Marin Ortiz</h6>
+                        <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">correoelbin@gmail.com</h6>
+                        <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">07-Aogsto-1989</h6>
+                        <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">326 958 5487</h6>
+                        <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">Calle 80 # 81 - 18 - Las palmas </h6>
+                        <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">Bucaramanga - Santander</h6>
+                    </div> 
+
+                    <!-- Sepárador -->
+                    <div class="Hr my-3"></div>
+
+                    <!-- Titulo Costo de Envio-->
+                    <div class="m-0 p-0 mt-3 mb-3 d-flex d-row align-items-center justify-content-between BK-Generic py-2 px-2">
+                        <h2 class="modal-title ColorDark-xx FontsSize-Md font Extra-Bold L-S-2"><i class="fas fa-dolly-flatbed ColorPrimary mr-1"></i> Costo de Envío</h2>
+                        <h2 class="modal-title ColorDark-xx FontsSize-Md Bold font-italic L-S-2">$ 15.000</h2>
+                    </div>
+
+
+                    <!-- Sepárador -->
+                    <div class="Hr"></div>
+
+
+                    <!-- Titulo Total de la Compra-->
+                    <div class="py-2 d-flex d-row align-items-center justify-content-between border-bottom">
                         <h2 class="modal-title FontsSize-md-pa Black L-S-3">Total</h2>
                         <small class="Semibold ColorDark-xx" href="#">precio de la compra</small>
                     </div>
-                    <div class="mt-3 py-2 d-flex d-row align-items-center justify-content-between">
-                        <h2 class="modal-title FontSize-Med Black L-S-2 text-uppercase">Total En Efectivo</h2>
+
+                    <!-- Valor FINAL DE COMPRA-->
+                    <div class="mt-3 py-2 d-flex flex-row align-items-center justify-content-between">
+                        <h2 class="modal-title FontSize-Med Black L-S-2 text-uppercase">Costo Total</h2>
                         <h2 class="modal-title FontSize-Med Black L-S-2">$3.550.477 COP</h2>
                     </div>
 
-                    <div class="m-0 p-0 mb-2 d-flex flex-row align-items-center justify-content-between">
+                    <!-- Sepárador -->
+                    <div class="Hr"></div>
+
+                    <div class="m-0 p-0 mb-2 d-flex flex-column align-items-center justify-content-between">
                         <!-- <h2 class="modal-title ColorDark-xx FontsSize-Re Black L-S-2">Total Con Cupo</h2> -->
                         <!-- <h2 class="modal-title ColorDark-xx FontsSize-Re Black L-S-2">$4.750.477 COP</h2> -->
-                        <p class="pt-2 Semibold ColorDark-xx FontsSize-Re L-H-5">Págalo hasta en <span class="Black ColorDark">10</span> cuotas quincenales de <span class="Black ColorDark">$18.839 COP</span> (El valor de la cuota incluye aval e interes)</p>
-                    </div>
+                        <p class="mb-1 pt-3 pb-3 Semibold ColorDark-xx FontsSize-Re L-H-5 border-bottom">Págalo hasta en <span class="Black ColorDark">10</span> cuotas quincenales de <span class="Black ColorDark">$18.839 COP</span> (El valor de la cuota incluye aval e interes)</p>
 
-                    <div class="Hr"></div>
+                        <div class="mt-4 mb-2 d-flex flex-row justify-content-center text-center align-items-center w-100">
+                            <a href="index.html" class="Display-None btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Btn-a-Light shadow-sm align-middle"><i class="fas fa-shipping-fast"></i> <span>&nbsp;Finalizar Compra</span></a>
 
-                    <div class="m-0 p-0 mt-3 mb-3 d-flex d-row align-items-center justify-content-between BK-Generic py-2 px-2">
-                        <h2 class="modal-title ColorDark-xx FontsSize-Md font Extra-Bold L-S-2"><i class="fas fa-dolly-flatbed ColorPrimary mr-1"></i> Costo de Envío</h2>
-                        <h2 class="modal-title ColorDark-xx FontsSize-Md Bold font-italic L-S-2">No está incluido</h2>
+                            <a href="SesionMetodoPago.html" class="btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Btn-a-Light shadow-sm align-middle"><i class="fas fa-shipping-fast"></i> <span>&nbsp;Finalizar Compra</span></a>
+                        </div>
                     </div>
                     
-                    <div class="Hr"></div>
-
-                    <div class="my-4 d-flex flex-row justify-content-center text-center align-items-center">
-                        <a href="index.html" class="Display-None btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Btn-a-Light shadow-sm align-middle"><i class="fas fa-shipping-fast"></i> <span>&nbsp;Finalizar Compra</span></a>
-
-                        <a href="SesionMetodoPago.html" class="btn text-uppercase w-100 Btn-Reset Black BK-Color-Dark FontsSize-Md L-S-3 Btn-a-Light shadow-sm align-middle"><i class="fas fa-cart-plus"></i> <span>&nbsp;Comprar</span></a>
-                    </div>
-                </div>
-               
             </div>
         </div>
     </section>
@@ -462,8 +486,130 @@
                 <a href="https://api.whatsapp.com/"><img src="img/Asset_1.svg" alt="LogoWhatsapp"></a>
             </div >
         </div>
+
+
+
+        <!-- Modal Para Agregar Nueva Direccion  -->
+        <div class="modal fade" id="Outfit-CheckOut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+
+                <div class="modal-content">
+
+                    <div class="modal-header d-flex d-row align-items-center justify-content-between">
+                        <h5 class="text-decoration-none modal-title FontsSize-Medium Black L-S-1" id="exampleModalLabel"><span class="fas fa-map-marker-alt mr-3 ColorPrimary FontSize-Med"></span>Gestionar Direcciones</h5>
+                        <a class="Black ColorDark-x CursorPointer" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                    
+
+                    <div class="modal-body">
+
+                        <div class="row no-gutters justify-content-center py-3">
+                            <!-- Lista de Direcciones-->
+                            <div class="px-3 w-100">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h5 class="m-0 text-left Extra-Bold L-S-05">Mis Direcciones</h5>
+
+                                   
+                                    <div class="overflow-auto">
+                                        <!-- Direccion ejemplo  1-->
+                                        <div class="d-flex flex-row justify-content-between pt-4 border-bottom" >
+                                            
+                                            <div class="mb-3 mr-2">
+                                                <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">Calle 80 # 81 - 18 - Las palmas </h6>
+                                                <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">Bucaramanga - Santander</h6>
+                                            </div> 
+                                            <div class="RadioButtonDirecion">
+                                                <input type="radio" aria-label="Radio button for following text input">
+                                            </div>
+                                        </div>
+                                        <!-- Direccion ejemplo  2-->
+                                        <div class="d-flex flex-row justify-content-between pt-4 border-bottom" >
+                                            
+                                            <div class="mb-3 mr-2">
+                                                <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">Carre 33 # 50 - 60 La Trinidad </h6>
+                                                <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">Bucaramanga - Santander</h6>
+                                            </div> 
+                                            <div class="RadioButtonDirecion">
+                                                <input type="radio" aria-label="Radio button for following text input">
+                                            </div>
+                                        </div>
+                                        <!-- Direccion ejemplo  3-->
+                                        <div class="d-flex flex-row justify-content-between pt-4 border-bottom" >
+                                            
+                                            <div class="mb-3 mr-2">
+                                                <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">Carre 33 # 50 - 60 La Trinidad </h6>
+                                                <h6 class="m-0 pt-1 SemiBold FontSize-Med L-S-05">Bucaramanga - Santander</h6>
+                                            </div> 
+                                            <div class="RadioButtonDirecion">
+                                                <input type="radio" aria-label="Radio button for following text input">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Direccion ejemplo  1-->
+                                    <a href="SesionCliente.html" class="text-center p-3 mt-4 FontsSize-17 Btn-P Black L-S-05 ColorPrimary BK-Color_trasn BorderDots">Agregar Nueva Dirección </a>
+
+                                </div>
+                            </div>
+
+
+                            <!-- Crear nueva Direccion-->
+                            <div class="p-sm-1 px-md-5 w-100 Display-None">
+                                <div class="d-flex flex-column justify-content-start">
+                                    <h5 class="m-0 mb-4 pt-2 pt-md-0 text-left Black L-S-05">Agregar Nueva Dirección</h5>
+                                    <!-- Datos de Envio -->
+                                    <form class="w-100 ">
+                                        <!-- INPUT Direccion de Envio -->
+                                        <div class="form-group mb-4">
+                                            <label class="Extra-Bold mb-1">Dirreción de Envio</label>
+                                            <input type="text" name="Direccion" class="form-control InputRegister" placeholder="Direccion de Envio" required >
+                                            <small id="AddresHelp" class="form-text text-muted ">Es importante que ingreses una dirección correcta.</small>
+                                        </div>
+
+                                        <!-- INPUT Departamento -->
+                                        <div class="form-group mb-4">
+                                            <label class="Extra-Bold mb-1">Departamento</label>
+                                            <input type="text" name="Departamento" class="form-control InputRegister" placeholder="Departamento" required >
+                                        </div>
+
+                                        <!-- INPUT Ciudad -->
+                                        <div class="form-group mb-4">
+                                            <label class="Extra-Bold mb-1">Ciudad</label>
+                                            <input type="text" name="Departamento" class="form-control InputRegister" placeholder="Ciudad" required >
+                                        </div>
+
+                                        <!-- INPUT Ciudad -->
+                                        <div class="form-group mb-4">
+                                            <label class="Extra-Bold mb-1">Barrio</label>
+                                            <input type="text" name="Departamento" class="form-control InputRegister" placeholder="Barrio" required >
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- Row Final -->
+                       
+                    </div>
+
+
+                    <div class="modal-footer d-flex d-row justify-content-center text-center Margin-Contetn_Dinamic">
+                        <a href="ProductCheckOutFinal.html" class="btn w-100 w-md-50 rounded text-center mb-3 mt-3 Btn-Reset BTN-Inputs Box_Shadow">Guardar</a>
+                
+                        
+                    </div>
+
+                </div><!-- Final Modal Content --> 
+
+            </div>
+        </div>
+        <!-- Modal Para Agregar Nueva Direccion ... Final  -->
          
         
+
 </body>
 
 </html>
