@@ -57,10 +57,10 @@
                     <!--  Lista de menu superior  -->
                     <ul class="list-inline ml-auto">
                         <li class="list-inline-item nav-item mr-4">
-                            <a class="IconHeader" href="" data-toggle="modal" data-target="#VideoOutfit"><i class="fas fa-shopping-bag FontsSize-Medium"></i> <span class="badge Badge-Bag">4</span></a>
+                            <a class="IconHeader Btn-a" href="" data-toggle="modal" data-target="#VideoOutfit"><i class="fas fa-shopping-bag FontsSize-Medium"></i> <span class="badge Badge-Bag">4</span></a>
                         </li>
                         <li class="list-inline-item nav-item mr-3">
-                            <a class="IconHeader" href="#"><i class="fas fa-filter"></i></a>
+                            <a class="IconHeader Btn-a" href="#"><i class="fas fa-filter"></i></a>
                         </li>
                     </ul>
                 </div><!--  cierre de container  -->
@@ -81,8 +81,12 @@
     
        <!-- Limpiar Contenedores para header dinamico -->
        <div class="Br-Header_Clear"></div>
-       <div class="Br-sm d-block"></div>
-       <div class="Br-md d-none d-sm-block Br-xl-None"></div>
+       <div class="Br-xs d-block d-md-none"></div>
+               
+           <!-- Botón de Volver Atraas Productos -->
+           <div class="container d-block text-left py-3">
+               <a class="text-center Btn-a FontsSize-Md Bold L-S-1" href="Products.html"><i class="fas fa-angle-left mr-1 align-middle ColorPrimary FontsSize-Md"></i> Volver a Catálogo</a>
+           </div>
     
         <!-- Outfits Detail -->
         <section class="Outfits-List animated fadeInDown">
@@ -101,11 +105,11 @@
 
                             <div class="carousel-inner PositionRelative">
 
-                                <div class="Pop ArrowBack-Content">
+                                <!-- <div class="Pop ArrowBack-Content">
                                     <div class="ArrowBack">
                                         <a href="OutFitDetail.html"><img src="img/Arrow_Volver.svg" alt="LogoWhatsapp" class="img-fluid"></a>
                                     </div >
-                                </div>
+                                </div> -->
 
                                 <div class="carousel-item active">
                                     <img src="img/model_16.jpg" loading="lazy" class="d-block w-100 h-30" alt="Imagenes-Carrusel">
@@ -172,7 +176,7 @@
                                         <span class="FontSize-Med Extra-Bold mr-2">TALLA</span> <span class="text-muted text-uppercase FontSize-Med lbltalla_feedback">s</span>
                                     </div>
 
-                                    <a href="" data-toggle="modal" data-target="#Modal-Guia_Tallas" class=" m-0 Semibold ColorDark-xx FontsSize-Md L-H-4">Guía de Tallas - <span class="Extra-Bold ColorPrimary"> Ver Más</span></a>
+                                    <!-- <a href="" data-toggle="modal" data-target="#Modal-Guia_Tallas" class=" m-0 Semibold ColorDark-xx FontsSize-Md L-H-4">Guía de Tallas - <span class="Extra-Bold ColorPrimary"> Ver Más</span></a> -->
                                 </div>
                                 <div class="d-flex mt-3">
                                     <ul class="nav producto-tallas">
@@ -237,10 +241,10 @@
    </div>
 
     <!-- div para carga dinamica de las marcas -->
-    <footer class="px-3 py-4 BK-Footer">
+    <footer class="px-3 py-3 BK-Footer">
         <div class="container d-flex flex-row justify-content-between align-items-center">
-            <div><a href="" target="blank" class="align-self-center Extra-Bold ColorDark-x Btn-a FontsSize-Md text-uppercase L-S-1">&#169; 2020 Baguer</a></div>
-            <div><a href="https://stirpe.co/politica-de-privacidad/" target="blank" class="align-self-center pl-4 float-left Semibold ColorDark-x Btn-a FontsSize-Md Border-Left">Términos y Condiciones</a></div>
+            <div class=""><a href="" target="blank" class="align-self-center Extra-Bold ColorDark-x Btn-a FontsSize-xxs text-uppercase L-S-1">&#169; 2020 Baguer</a></div>
+            <div class=""><a href="https://stirpe.co/politica-de-privacidad/" target="blank" class="align-self-center pl-4 float-left Semibold ColorDark-x Btn-a FontsSize-xxs Border-Left">Términos y Condiciones</a></div>
         </div>
     </footer>
 

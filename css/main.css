@@ -78,7 +78,7 @@
 
 
 /*Content para Fullwidnt paginas con footer */
-.HeightWindow         { height: calc(100vh - 144px); }
+.HeightWindow         { height: calc(100vh - 50px); }
 
 /* estudiar este diseño de flex */
 .FlexWindowAdaptable  { box-sizing: border-box; 
