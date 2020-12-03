@@ -9,6 +9,10 @@
     --primary: #0FA8EC;
     --primaryDark:#0187ed;
     --Green: #0db670;
+    --Alert: #FCD44F;
+    --Alert-2: #ffa012;
+    --Danger: #EE4842;
+    --Danger-Light: #F96555;
     --primary-x: #21C4E1;
     --gray-line: #DEDEDE;
     --Gray-Button: #ececea;
@@ -105,6 +109,7 @@
 .Display-None         { display: none!important;}
 
 .OverflowScroll       { overflow: scroll;}
+.OverflowScroll-y       { overflow-y: scroll;}
 .Overflow-Hidden      { overflow: hidden!important;}
 .Overflow-Auto        { overflow: auto!important;}
 
@@ -173,8 +178,6 @@
 .LightItalic {font-style: italic;}
 
 
-
-
 /* -------------------- Codigo detallado del Proyecto ------------- */
 
 
@@ -192,9 +195,15 @@
 
 .Btn-mas_Productos { 
     border: 2px solid var(--gray-x);
-    padding: 0.75rem 0;
+    padding: 0.33rem 0;
     background: var(--light);
  }
+ .Btn-mas_Productos:hover, .Btn-mas_Productos:active {
+     background-color: var(--primary);
+     color: var(--light);
+     border: 2px solid var(--primary-x);
+ }
+
 
  .Border-Btn-Dark { 
     border: 3px solid var(--dark)!important;
@@ -221,7 +230,7 @@
  .Btn-P:hover, .Btn-P:focus   { color: var(--primaryDark); }
 
 .Border-Left        { border-left: 2px solid var(--dark-x)!important; }
-.Border-Bottom      { border-bottom: 2px solid; border-image: linear-gradient(45deg, var(--primary), var(--gray-line)); border-image-slice: 1;}
+.Border-Bottom      { border-bottom: 1px solid; border-image: linear-gradient(45deg, var(--gray-line), var(--primary)); border-image-slice: 1;}
 .Border-B-Gray      { border-bottom: 1px solid; color: var(--gray-line);}
 .Border-R-0         { border-radius: 0 !important;}
 .Border-Button-1    { border: 1px solid var(--BK-Footer) !important; }
@@ -239,7 +248,11 @@
 .ColorGray-x     { color: var(--gray-x); }
 .ColorPrimary    { color: var(--primary); }
 .Color-Light     { color: var(--light);}
+.Color-Alert     { color: var(--Alert);}
+.Color-Alert-2     { color: var(--Alert-2);}
+.Color-Danger     { color: var(--Danger);}
 .Color-Green     { color: var(--Green);}
+.ColorPrimaryDark    { color: var(--primaryDark); }
 
 
 .BK_Color_Light     { background-color: var(--light)!important; }
@@ -919,3 +932,105 @@ amp-nested-menu, amp-nested-menu [amp-nested-submenu] {
     border: 1px solid #a1c8ef;
     border-radius: .25rem;
 }
+
+
+/* Codigo actualizado para filtros 12/02/2020 */
+.root {
+    position: relative;
+    min-height: 100vh;
+}
+.Br-Header_Root {
+    height: 160px;
+}
+.P-Absolute-b-0 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.Reset-Footer-Size {
+    padding-bottom: 56px;
+}
+.IconGender {
+    position: absolute;
+    top: -0.2px;
+    left: -21px;
+}
+.Border-Left-Alert    { border-left: 3px solid var(--Alert-2)!important; }
+
+.Border-Left-Primary    { border-left: 3px solid var(--primary)!important; }
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: .07rem;
+}
+.custom-control-label::before {
+    position: absolute;
+    top: .25rem;
+    left: -20px;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: #636c76 solid 1px;
+        border-top-color: rgb(48, 60, 72);
+        border-right-color: rgb(49, 62, 75);
+        border-bottom-color: rgb(54, 66, 77);
+        border-left-color: rgb(45, 57, 68);
+}
+.custom-control {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.3rem;
+}
+.Max-h-190 {
+    max-height: 220px;
+}
+
+
+/* Scroll custom */
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--Gray-Button);
+    border-radius: 5px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(204, 210, 226); 
+    background-clip: padding-box;
+    border: 0.05em solid #b4c5caee;
+    border-radius: 5px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:var(--dark-xx); 
+  }
+  /* Scroll custom */
+
+
+  .BK_Color_Light > a.active {
+    background-color: var(--primary);
+    color: var(--light);
+    border: 2px solid var(--primary-x);
+  }
+
+.Bk-Color-Alert     { background-color: var(--Alert);}
+.Bk-Color-Alert-2     { background-color: var(--Alert-2);}
+.Bk-Color-Danger     { background-color: var(--Danger);}
+.Bk-Color-Green     { background-color: var(--Green);}
+.Bk-ColorPrimaryDark    { background-color: var(--primaryDark); }
+
+.Btn-Delete   { 
+    background-color: var(--primary);
+    color: var(--Light-x)!important;
+
+    transition: 0.37s ease-out;
+    transition-delay: 0.005s; }
+ .Btn-Delete:hover, .Btn-Delete:focus { 
+     background-color: var(--Danger-Light); }
