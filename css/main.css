@@ -1033,4 +1033,38 @@ amp-nested-menu, amp-nested-menu [amp-nested-submenu] {
     transition: 0.37s ease-out;
     transition-delay: 0.005s; }
  .Btn-Delete:hover, .Btn-Delete:focus { 
-     background-color: var(--Danger-Light); }
+     background-color: var(--dark-x); }
+
+
+
+
+     
+/* Cambios 12/04/2020 */
+
+.Outline-0, .Outline-0:focus  {outline: none;}
+
+.Box_Shadow-0, .Box_Shadow-0:focus  { box-shadow: none;}
+
+.mt-72 {
+    margin-top: 72px;
+}
+
+
+.BK-C-Collapse-trans   { background: rgba(15, 108, 179, 0.05);}
+
+  #sidebar {
+    position: fixed;
+    top: 0%;
+
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    background: var(--light);
+
+    -webkit-transition: all ease 0.25s;
+    transition: all ease 0.25s;
+  }
+
+  .Max-h-317 {
+    max-height: 317px;
+}

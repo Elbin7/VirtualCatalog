@@ -44,6 +44,7 @@
     <!-- Header Construction Component -->
     <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -51,8 +52,9 @@
 <main class="root">
 
      <!-- Header con scrollview dinamico -->
-    <header amp-fx="float-in-top" class="Header-Dinamic Box_Shadow">
+    <header class="Header-Dinamic Box_Shadow">
         <nav class="navbar navbar-expand-lg navbar-light Box_Shadow NavBar BK_Color_Light">
+            
             <div class="container d-inline-flex align-items-center">
                 
                 <!--Perfil del Promotor -->
@@ -65,7 +67,7 @@
                     <a class="m-0 p-0 navbar-brand FontsSize-Re Black L-S-1" href="#">Fabian Barrera Baguer</a>
                     <!-- <small class="Medium ColorDark-xx" href="#">Este catálogo es para ti</small> -->
                 </div>           
-            <!--<button class="navbar-toggler border-0 IconMenuToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                <!--<button class="navbar-toggler border-0 IconMenuToggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars" aria-hidden="true"></i>
                 </button> -->
@@ -76,30 +78,141 @@
                         <a class="IconHeader Btn-a" href="#"><i class="fas fa-shopping-bag FontsSize-Medium ColorDark-x"></i> <span class="badge Badge-Bag">4</span></a>
                     </li>
                     <li class="list-inline-item nav-item d-lg-none ml-1">
-                        <a on="tap:FilterSidebar" class="IconHeader CursorPointer ColorDark-x"><i class="fas fa-sliders-h FontsSize-md-pa"></i></a>
+                        <!-- <a class="IconHeader CursorPointer ColorDark-x"><i class="fas fa-sliders-h FontsSize-md-pa"></i></a> -->
+
+                        <!--  Menu Sidebar  -->
+                        <button class="navbar-toggler border-0 ColorDark-x pl-1 pr-1 Outline-0" onclick="OpenSidebar()" type="button">
+                            <i class="fas fa-sliders-h FontsSize-md-pa ColorDark-x"></i>
+                        </button>
                     </li>
                 </ul>
+                
             </div><!--  cierre de container  -->
+            
         </nav>
+
+
+
+        <!--  SIDEBAR  -->
+        <div  id="sidebar"  class="d-flex flex-column  BK-Color-Dark d-lg-none">
+
+            <ul class="align-self-stretch">
+                <!-- Filtros Title -->
+                <section class="p-4 d-flex flex-row justify-content-between align-items-center  BK_Color_Light Box_Shadow">
+                    <h5 class="text-left mb-0 Black L-S-1">Filtros</h5>
+                    <a href="#" class="Btn-a" onclick="CloseSidebar()"><i class="fas fa-times FontsSize-md-pa"></i></a>
+                </section>
+
+                
+                <!--  Acordion -->
+                <div class="accordion" id="accordionExample">
+
+                    <!--  Acordion Filtros Género  -->
+                    <div class="card border-secondary Border-R-0">
+                        <div class="card-header border-secondary BK_Color_Light py-3" >
+                            <button class="btn btn-block text-left p-0 Box_Shadow-0" type="button" data-toggle="collapse"
+                                data-target="#FiltroGenero" aria-expanded="true" aria-controls="collapseOne">
+                                <h6 class="mb-0 pl-3 text-left position-relative   FontsSize-17 Border-Left-Primary Extra-Bold L-S-05">Género </h6>
+                            </button>
+                        </div>
+                
+                        <div id="FiltroGenero" class="collapse show  BK-C-Collapse-trans"  data-parent="#accordionExample">
+                            <!-- Lista de FIltros -->
+                            <form action="/action_page.php" class="px-4 pt-4 pb-3">
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input CursorPointer" id="customCheck" name="example1">
+                                    <label class="pl-2 custom-control-label CursorPointer Semibold ColorDark-xx" for="customCheck">Hombre</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input CursorPointer" id="customCheck2" name="example2">
+                                    <label class="pl-2 custom-control-label CursorPointer Semibold ColorDark-xx" for="customCheck2">Mujer</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--  Acordion Filtros Marcas  -->
+                    <div class="card border-secondary Border-R-0">
+                        <div class="card-header border-secondary BK_Color_Light py-3" >
+                            <button class="btn btn-block text-left p-0 Box_Shadow-0" type="button" data-toggle="collapse"
+                                data-target="#FiltroMarca" aria-expanded="true" aria-controls="collapseOne">
+                                <h6 class="mb-0 pl-3 text-left position-relative   FontsSize-17 Border-Left-Primary Extra-Bold L-S-05">Marcas </h6>
+                            </button>
+                        </div>
+                
+                        <div id="FiltroMarca" class="collapse BK-C-Collapse-trans"  data-parent="#accordionExample">
+
+                             <!-- Lista de FIltros -->
+                            <form action="/action_page.php" class="px-4 pt-4 pb-3 OverflowScroll-y Max-h-317">
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input CursorPointer" id="customCheck3">
+                                    <label class="pl-2 custom-control-label CursorPointer Semibold ColorDark-xx" for="customCheck3">Adidas</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input CursorPointer" id="customCheck4">
+                                    <label class="pl-2 custom-control-label CursorPointer Semibold ColorDark-xx" for="customCheck4">Americanino</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input CursorPointer" id="customCheck5">
+                                    <label class="pl-2 custom-control-label CursorPointer Semibold ColorDark-xx" for="customCheck5">Armani</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input CursorPointer" id="customCheck6">
+                                    <label class="pl-2 custom-control-label CursorPointer Semibold ColorDark-xx" for="customCheck6">BigStar</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input CursorPointer" id="customCheck7">
+                                    <label class="pl-2 custom-control-label CursorPointer Semibold ColorDark-xx" for="customCheck7">Clover</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input CursorPointer" id="customCheck8">
+                                    <label class="pl-2 custom-control-label CursorPointer Semibold ColorDark-xx" for="customCheck8">Derek</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input CursorPointer" id="customCheck9">
+                                    <label class="pl-2 custom-control-label CursorPointer Semibold ColorDark-xx" for="customCheck9">Diesel</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input CursorPointer" id="customCheck10">
+                                    <label class="pl-2 custom-control-label CursorPointer Semibold ColorDark-xx" for="customCheck10">Nike</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div><!--  Acordion  Final -->
+
+            </ul>
+
+            <a class="Btn-mas_Productos FontsSize-Title Extra-Bold ColorDark-x L-S-4   text-center py-3 mt-auto mx-4 mb-4" href="#">Aplicar</a>
+
+            <!-- Botón Limpiar Filtros -->
+            <a class="py-2 px-3 mx-4 mb-4 d-flex flex-row justify-content-between align-items-center rounded-lg Box_Shadow Btn-Delete" href="#">
+                <h5 class="m-0 Bold FontsSize-Re">Eliminar Filtros</h5>
+                <div><i class="fas fa-times"></i></div>
+            </a>
+
+            
+        </div> <!--  SIDEBAR  Final -->
       
 
+
         <!-- stirpe marca -->
-        <div class="BranchLogo d-flex justify-content-center BK_Color_Primary animated fadeInRight">
+        <div class="BranchLogo d-flex justify-content-center BK_Color_Primary">
             <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/StirpelogoLight.svg" type="img/svg" alt="LogoStirpe" class="StirpeImg"></a>            
         </div>
 
         <!-- derek Marca -->
-        <div class="Display-None BranchLogo d-flex justify-content-center BK_Color_Derek animated fadeInRight">
+        <div class="Display-None BranchLogo d-flex justify-content-center BK_Color_Derek ">
             <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/Logo_Derek.svg" type="img/png" alt="LogoStirpe" class="StirpeImg"></a>            
         </div>
 
         <!-- Chevignon Marca -->
-        <div class="Display-None BranchLogo d-flex justify-content-center Color-Chevignon animated fadeInRight">
+        <div class="Display-None BranchLogo d-flex justify-content-center Color-Chevignon ">
             <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/Logo_Chevignon_White.svg" type="img/svg" alt="LogoStirpe" class="ChevignonLogo"></a>            
         </div>
 
         <!-- Americanino Marca -->
-        <div class="Display-None BranchLogo d-flex justify-content-center Color_Americanino animated fadeInRight">
+        <div class="Display-None BranchLogo d-flex justify-content-center Color_Americanino ">
             <a href="https://www.stirpe.co/" target="blank" class="align-self-center"><img src="img/Americanino_W.svg" type="img/svg" alt="LogoStirpe" class="AmericaninoLogo"></a>            
         </div>
 
@@ -111,9 +224,10 @@
     </header>
     <!-- Final header -->
 
-    
+
     <!-- Limpiar Contenedores para header dinamico -->
     <div class="Br-Header_Root"></div>
+
 
     <!-- Products List -->
     <section class="Outfits-List Reset-Footer-Size animated fadeInDown mt-2 mt-md-4">
@@ -141,7 +255,7 @@
 
                     <!-- Género Title -->
                     <section class="p-3 mt-3 d-flex flex-column rounded-lg   BK_Color_Light Box_Shadow">
-                        <h6 class="mb-0 pl-2 text-left position-relative   Border-Left-Primary Extra-Bold L-S-05">Género </h5>
+                        <h6 class="mb-0 pl-2 text-left position-relative   Border-Left-Primary Extra-Bold L-S-05">Género </h6>
 
                         <!-- Divider -->
                         <div class="Border-Bottom mt-2 mb-3"></div>
@@ -258,7 +372,6 @@
                     </section>
 
                 </div>
-
 
 
                  <!-- Content INFO -->
@@ -419,83 +532,12 @@
     <!-- div para carga dinamica de las marcas -->
     <footer class="px-3 py-3 BK-Footer P-Absolute-b-0 mt-auto">
         <div class="container d-flex flex-row justify-content-between align-items-center">
-            <div class=""><a href="" target="blank" class="align-self-center Extra-Bold ColorDark-x Btn-a FontsSize-xxs text-uppercase L-S-1">&#169; 2020 Baguer</a></div>
-            <div class=""><a href="https://stirpe.co/politica-de-privacidad/" target="blank" class="align-self-center pl-4 float-left Semibold ColorDark-x Btn-a FontsSize-xxs Border-Left">Términos y Condiciones</a></div>
+            <div><a href="" target="blank" class="align-self-center Extra-Bold ColorDark-x Btn-a FontsSize-xxs text-uppercase L-S-1">&#169; 2020 Baguer</a></div>
+            <div><a href="https://stirpe.co/politica-de-privacidad/" target="blank" class="align-self-center pl-4 float-left Semibold ColorDark-x Btn-a FontsSize-xxs Border-Left">Términos y Condiciones</a></div>
         </div>
     </footer>
 
 </main>
-
-
-
- <!-- Sidebar Menu para filtro de Productos -->
-    <div>
-        <amp-sidebar id="FilterSidebar" layout="nodisplay" style="width:80%">
-            <amp-nested-menu layout="fill">
-                <ul class="root">
-
-                    <li class="py-4 px-3 mb-3 BK_Color_Light Box_Shadow">
-                        <h4 class="m-0 text-uppercase Black FontsSize-Title L-S-3"><strong><i
-                                    class="fas fa-store mr-1"></i></strong> Productos Catálogo</h4>
-                    </li>
-                    <li class="mb-3 BK_Color_Light Box_Shadow">
-                        <section class="d-flex flex-row justify-content-between">
-                            <a
-                                class="mx-auto py-3 w-50 text-center text-uppercase FontsSize-Title L-S-3 Extra-Bold ColorDark Btn-Filters-sm Btn-a CursorPointer active">Hombre</a>
-                            <a
-                                class="mx-auto py-3 w-50 text-center text-uppercase FontsSize-Title L-S-3 Extra-Bold ColorDark Btn-Filters-sm Btn-a CursorPointer">Mujer</a>
-                        </section>
-                    </li>
-                    <li>
-
-                        <ul class="Overflow-Auto">
-                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
-                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Blusas</h4>
-                            </li>
-                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
-                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Busos</h4>
-                            </li>
-                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
-                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Cardigans
-                                </h4>
-                            </li>
-                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
-                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Chalecos
-                                </h4>
-                            </li>
-                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
-                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Chaquetas
-                                </h4>
-                            </li>
-                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
-                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Faldas</h4>
-                            </li>
-                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
-                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Jeans</h4>
-                            </li>
-                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
-                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Medias</h4>
-                            </li>
-                            <li class="py-3 px-3 mb-1 BK_Color_Light shadow-sm">
-                                <h4 amp-nested-submenu-open class="m-0 Bold ColorDark-xx FontsSize-Title L-S-3"> Shorts</h4>
-                            </li>
-                            
-                        </ul>
-                    </li>
-
-                </ul>
-            </amp-nested-menu>
-            <!-- <div class="PositionAbsolute-B p-3 BK_Color_Light Box_Shadow w-100">
-                <div class="d-flex d-row justify-content-center text-center align-items-center">
-                    <a href="#"
-                        class="btn text-uppercase w-100 Btn-Reset Black BK_Color_Primary FontsSize-Md L-S-3 Btn-a-Light shadow-sm align-middle"><strong><i
-                                class="fas fa-box-open"></i></strong> <span>&nbsp; Ver Todos</span></a>
-                </div>
-            </div> -->
-        </amp-sidebar>
-    </div>
-<!-- Sidebar Menu para filtro de Productos Final-->
-
 
 
     <!-- Optional JavaScript -->
@@ -511,11 +553,11 @@
         crossorigin=" anonymous "></script>
 
         <!-- Elementos emergentes -->
-        <div class="Pop Pop-Bottom-r d-block d-sm-none">
+        <!-- <div class="Pop Pop-Bottom-r d-block d-sm-none">
             <div class="Button-Whatsapp">
                 <a href="https://api.whatsapp.com/"><img src="img/Asset_1.svg" alt="LogoWhatsapp"></a>
             </div >
-        </div>
+        </div> -->
         
 </body>
 
